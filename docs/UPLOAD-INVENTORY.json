@@ -1,10 +1,10 @@
 {
   "project": "DBFL Operation Christmas 2026",
-  "version": "approved 90-second film without voiceover",
-  "file_count_excluding_this_inventory": 317,
+  "version": "approved film with stable typography, script-based left sidebars, no dialogue subtitles or voiceover",
+  "file_count_excluding_this_inventory": 321,
   "asset_files": 279,
   "prepared_staff_portraits": 248,
-  "total_bytes": 62029986,
+  "total_bytes": 62020629,
   "largest_file": {
     "path": "public/assets/characters/santa-claus-rigged.glb",
     "bytes": 13527540,
@@ -41,14 +41,19 @@
       "sha256": "adb9a6e804ae54a0a403f45bc63ea7c53a05ccbced45fac9500f9384a6597f71"
     },
     {
+      "path": "docs/TEXT-RENDERING.md",
+      "bytes": 1028,
+      "sha256": "0af9ca7297f5a36bb029d50353da1b520756a8c090c30b69d4d0f2fdbba68db8"
+    },
+    {
       "path": "docs/VALIDATION.md",
       "bytes": 1429,
       "sha256": "872126744ae13b1821a0995a137ced9bb757ac03c79ee010d5c8d3829dd7b82d"
     },
     {
       "path": "docs/VOICEOVER.md",
-      "bytes": 431,
-      "sha256": "e8fe5296e80078fc89e48d3d22e45ca9c3c2023359e93c13a712b65a610c03c7"
+      "bytes": 592,
+      "sha256": "54d02eec621a0b69c70cfc7774f331106099b9884c2b41a630150fc3d0e962fb"
     },
     {
       "path": "package-lock.json",
@@ -1466,6 +1471,11 @@
       "sha256": "9795a00afc10f6e9948aaa571f83476ea066912261d68b7903c1c441d8ea28eb"
     },
     {
+      "path": "scripts/check-text-stability.mjs",
+      "bytes": 613,
+      "sha256": "f4cec8b8cea198ff927122b17cf6410eab4499065d296041116fb028eda20fdc"
+    },
+    {
       "path": "scripts/fetch-dublin-map.py",
       "bytes": 1275,
       "sha256": "0919f15d81670a294ae0d1e9cc49491224a7a4aae39c35453eb5b05bb3b8d9c0"
@@ -1532,38 +1542,43 @@
     },
     {
       "path": "src/Root.tsx",
-      "bytes": 4268,
-      "sha256": "b06d52cc5261c3cf726790d03210c57da674c3444d1b0c9d072a4537a5775c8b"
+      "bytes": 4213,
+      "sha256": "9ed45bff3e014952f16d373734c021f4b1af2798fdd5160c66c6dd40b29efb5a"
     },
     {
       "path": "src/Scene2Benchmark.tsx",
-      "bytes": 10422,
-      "sha256": "5e21b78026ceeb5897391c177686549f1153cf040cbf2e68c101086b9b3b3cd2"
+      "bytes": 7997,
+      "sha256": "014dafbe2bce0e5422e93dc4e1e577a7af015c9a44ff4c831fd775868d0e2fc2"
     },
     {
       "path": "src/Scene3Structural.tsx",
-      "bytes": 11680,
-      "sha256": "4b584d8a7e219acebcb9afef977479048d1c598ef944c788f0f1e1bd126222f6"
+      "bytes": 8496,
+      "sha256": "bf0bfc6045eaf5d6591756f75f1b5ad6921d41e283ced365584f6326eee38381"
     },
     {
       "path": "src/Scene4Transport.tsx",
-      "bytes": 11212,
-      "sha256": "1efb2d13153252af2dc4d5afeb811047a8370a0ff3e950d9d9dad4305f5dd803"
+      "bytes": 8705,
+      "sha256": "26fe7b080a2ba510205cfce55bdc00056c7c9ae8161eca93d0055d2eea18e4ec"
     },
     {
       "path": "src/Scene5Sustainability.tsx",
-      "bytes": 5945,
-      "sha256": "5141a20de436e1bbda606d19363c345c91ed3ca33fbe22d39279c8529ece37fa"
+      "bytes": 3075,
+      "sha256": "1636c4a77e09f98ae4ded2a154a28186b78d48aef2e8fd71fa438e93cabe5e28"
     },
     {
       "path": "src/Scene6Finale.tsx",
-      "bytes": 9378,
-      "sha256": "54108cc0f1afd6a34bca4db7ea964d6c7f4244d25fcdff8cf9b0899461787957"
+      "bytes": 8537,
+      "sha256": "5837732679e723e9cb60723d409c821fa8e4ca4d58b666220eaacc43e8ff6820"
     },
     {
       "path": "src/Scenes.tsx",
-      "bytes": 5094,
-      "sha256": "aac17abab2299d16c9699b79f97545f53a4a03d347a62cbaf2c9a035f374ff26"
+      "bytes": 4709,
+      "sha256": "3429d42d2b77efdb968c5df8626062e5bdb2058bccab2071824fa3f2ec68788a"
+    },
+    {
+      "path": "src/ScriptSidebar.tsx",
+      "bytes": 2017,
+      "sha256": "0d6c102f57cfdf8b070c6fbc3014e1ba2f8a6c8b09b3061d7c2f91412bf7593b"
     },
     {
       "path": "src/StaffPhotoMosaic.tsx",
@@ -1572,8 +1587,8 @@
     },
     {
       "path": "src/components.tsx",
-      "bytes": 13159,
-      "sha256": "dc044332659592e1b09ca197cbad3835b17b6ffce34a578baccb8a2a9a07cbf1"
+      "bytes": 11570,
+      "sha256": "63a2ff220a9b4d25a275ba1c281b589c94aca32f29107541a9acda424005325f"
     },
     {
       "path": "src/config.ts",
@@ -1591,19 +1606,24 @@
       "sha256": "b9900e8f2d9dd0508919db76ded7f60ef532157750339d786c3c395643fc6675"
     },
     {
+      "path": "src/loadBrandFont.ts",
+      "bytes": 771,
+      "sha256": "ed908f25b2bb9636658f43329305bc501a550c97b8a62bf6c46fe566bc7b3082"
+    },
+    {
       "path": "src/staff-photos.json",
       "bytes": 32438,
       "sha256": "cafa6069e20fcdeaee921e98c6d204a55015f76ae5f7982270dadd7c4f73fba4"
     },
     {
       "path": "src/style.css",
-      "bytes": 244,
-      "sha256": "35f4065dba89087f5370eae7471000774e1f20af60a9516aa165c68d3d88f7d9"
+      "bytes": 137,
+      "sha256": "b91de22072cecd59c4e823261c371719b54a201b3d9e6abf041837bb6958c3a1"
     },
     {
       "path": "tsconfig.json",
-      "bytes": 315,
-      "sha256": "37e8b233950276e2afd7f6e0b1daad1343221eb6d8ed03edaf0f5c14eb65e4d0"
+      "bytes": 331,
+      "sha256": "38123fb406f8d4af84ed8b8fda07adc9678ea97d7c3f38ec373527e685380a63"
     }
   ],
   "hashes_describe": "Git blob bytes, after text line-ending normalization"

@@ -1,3 +1,4 @@
+import { ScriptSidebar } from "./ScriptSidebar";
 import React from "react";
 import {
   AbsoluteFill,
@@ -176,24 +177,7 @@ const MissionControl = () => {
         <br />
         <span style={{ color: brand.orange }}>— Approved</span>
       </div>
-      <div
-        style={{
-          position: "absolute",
-          left: 100,
-          top: 470,
-          fontSize: 27,
-          lineHeight: 1.8,
-          color: "#D7E4E8",
-        }}
-      >
-        Four disciplines.
-        <br />
-        One extraordinary deadline.
-        <br />
-        <span style={{ color: brand.green, opacity: progress(f, 85, 110) }}>
-          All systems ready.
-        </span>
-      </div>
+      <ScriptSidebar scene={5} top={440} />
       <div
         style={{
           position: "absolute",
@@ -212,28 +196,6 @@ const MissionControl = () => {
       >
         APPROVED FOR TAKEOFF
       </div>
-      {f < 130 ? (
-        <div
-          style={{
-            position: "absolute",
-            bottom: 94,
-            width: "100%",
-            textAlign: "center",
-          }}
-        >
-          <span
-            style={{
-              display: "inline-block",
-              background: "#0B171FEF",
-              padding: "19px 30px",
-              fontSize: 29,
-              borderLeft: `3px solid ${brand.orange}`,
-            }}
-          >
-            The client wants it by the 24th.
-          </span>
-        </div>
-      ) : null}
     </AbsoluteFill>
   );
 };
@@ -372,7 +334,11 @@ export const Scene6Finale = () => {
         style={{ opacity: progress(f, 0, 12), position: "absolute", inset: 0 }}
       >
         {f < 150 ? <MissionControl /> : null}
-        <Sequence from={150} durationInFrames={175} name="Approved runway takeoff">
+        <Sequence
+          from={150}
+          durationInFrames={175}
+          name="Approved runway takeoff"
+        >
           <ApprovedRunwayTakeoff />
         </Sequence>
 

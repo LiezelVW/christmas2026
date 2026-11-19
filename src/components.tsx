@@ -91,7 +91,6 @@ export const AnimatedScene: React.FC<{
   title: string;
   department: string;
   duration: number;
-  caption?: string;
   backdrop?: React.ReactNode;
   snow?: boolean;
 }> = ({
@@ -100,7 +99,6 @@ export const AnimatedScene: React.FC<{
   title,
   department,
   duration,
-  caption,
   backdrop,
   snow = true,
 }) => {
@@ -124,7 +122,6 @@ export const AnimatedScene: React.FC<{
       <div
         style={{
           opacity: ease(f, 0, 12) * (1 - ease(f, duration - 10, duration)),
-          transform: `scale(${1 + f * 0.000035})`,
           height: "100%",
         }}
       >
@@ -172,29 +169,6 @@ export const AnimatedScene: React.FC<{
           </div>
         ) : null}
         {children}
-        {caption && index !== 1 ? (
-          <div
-            style={{
-              position: "absolute",
-              bottom: 94,
-              width: "100%",
-              textAlign: "center",
-              zIndex: 10,
-            }}
-          >
-            <span
-              style={{
-                display: "inline-block",
-                background: "#0B171FEF",
-                padding: "19px 30px",
-                fontSize: 29,
-                borderLeft: `3px solid ${brand.orange}`,
-              }}
-            >
-              {caption}
-            </span>
-          </div>
-        ) : null}
         <footer
           style={{
             position: "absolute",
@@ -212,37 +186,7 @@ export const AnimatedScene: React.FC<{
           <span>24 DEC 2026 · REV 06</span>
         </footer>
       </div>
-      {caption && index === 1 ? (
-        <div
-          data-caption-layer="fixed-single"
-          style={{
-            position: "absolute",
-            bottom: 94,
-            width: "100%",
-            textAlign: "center",
-            zIndex: 20,
-            opacity: ease(f, 0, 12) * (1 - ease(f, duration - 10, duration)),
-            pointerEvents: "none",
-          }}
-        >
-          <span
-            key={caption}
-            style={{
-              display: "inline-block",
-              maxWidth: "calc(100% - 160px)",
-              overflow: "hidden",
-              isolation: "isolate",
-              background: "#0B171F",
-              padding: "19px 30px",
-              fontSize: 29,
-              borderLeft: `3px solid ${brand.orange}`,
-              verticalAlign: "bottom",
-            }}
-          >
-            {caption}
-          </span>
-        </div>
-      ) : null}
+
       {snow ? <SnowParticles /> : null}
       <div
         style={{

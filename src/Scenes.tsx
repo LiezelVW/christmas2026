@@ -1,3 +1,4 @@
+import { ScriptSidebar } from "./ScriptSidebar";
 import React from "react";
 import { Img, staticFile, useCurrentFrame } from "remotion";
 import {
@@ -141,20 +142,7 @@ export const Scene1 = () => {
           </div>
         </div>
       )}
-      <div style={{ position: "absolute", left: 100, top: 440, maxWidth: 660 }}>
-        <AnimatedTypography
-          delay={35}
-          style={{ fontSize: 27, color: brand.blue, lineHeight: 1.7 }}
-        >
-          One extraordinary client.
-          <br />
-          One immovable deadline.
-          <br />
-          <span style={{ color: "white" }}>
-            Every discipline, working together.
-          </span>
-        </AnimatedTypography>
-      </div>
+      <ScriptSidebar scene={0} />
     </>
   );
 };

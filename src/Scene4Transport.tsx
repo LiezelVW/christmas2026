@@ -1,3 +1,4 @@
+import { ScriptSidebar } from "./ScriptSidebar";
 import React from "react";
 import { useCurrentFrame, Img, staticFile } from "remotion";
 import { AnimatedChristmasTeam } from "./AnimatedChristmasTeam";
@@ -80,92 +81,7 @@ export const Scene4Analysis = () => {
   };
   return (
     <>
-      <div
-        style={{
-          position: "absolute",
-          left: 100,
-          top: 390,
-          width: 600,
-          opacity: progress(f, 10, 28),
-        }}
-      >
-        <Status approved={solved}>
-          {solved ? "ROUTE OPTIMISED" : "M50 — TRAFFIC DELAYS DETECTED"}
-        </Status>
-        <div style={{ marginTop: 24 }}>
-          <SmallLabel>
-            {f < 100
-              ? "01 / NETWORK CONGESTION"
-              : f < 265
-                ? "02 / ROUTE ASSESSMENT"
-                : "03 / CLEAR TO DELIVER"}
-          </SmallLabel>
-        </div>
-        <div
-          style={{
-            fontSize: 21,
-            color: "#D5E3E8",
-            lineHeight: 1.7,
-            marginTop: 15,
-            maxWidth: 460,
-          }}
-        >
-          {solved
-            ? "A clear sleigh corridor. Christmas stays on schedule."
-            : f < 165
-              ? "Queued traffic. A very busy Christmas Eve."
-              : "Assess the road network. Evaluate a sleigh flight corridor."}
-        </div>
-        <div
-          style={{
-            marginTop: 32,
-            opacity: progress(f, 90, 115),
-            maxWidth: 420,
-          }}
-        >
-          <SmallLabel>TRAVEL-TIME COMPARISON / SCHEMATIC</SmallLabel>
-          {[
-            ["ROAD NETWORK", 1, "QUEUEING"],
-            [
-              "SLEIGH CORRIDOR",
-              solved ? 0.3 : 0.62,
-              solved ? "CLEAR" : "ASSESSING",
-            ],
-          ].map(([label, bar, state]) => (
-            <div key={String(label)} style={{ marginTop: 19 }}>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  fontSize: 13,
-                  letterSpacing: 1,
-                  color: "#DCE9EE",
-                }}
-              >
-                <span>{label}</span>
-                <span
-                  style={{
-                    color:
-                      label === "ROAD NETWORK" ? brand.orange : brand.green,
-                  }}
-                >
-                  {state}
-                </span>
-              </div>
-              <div style={{ height: 4, background: "#7594A333", marginTop: 9 }}>
-                <div
-                  style={{
-                    width: `${Number(bar) * 100}%`,
-                    height: "100%",
-                    background:
-                      label === "ROAD NETWORK" ? brand.orange : brand.green,
-                  }}
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      <ScriptSidebar scene={3} />
       <div
         style={{
           position: "absolute",

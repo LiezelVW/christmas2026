@@ -1,3 +1,4 @@
+import { ScriptSidebar } from "./ScriptSidebar";
 import React from "react";
 import {
   AbsoluteFill,
@@ -259,123 +260,7 @@ export const Scene3Analysis = () => {
           </svg>
         </div>
       </div>
-      <div
-        style={{
-          position: "absolute",
-          left: 100,
-          top: 390,
-          width: 550,
-          opacity: ease(f, 15, 30),
-        }}
-      >
-        <div
-          style={{
-            padding: "18px 22px",
-            borderLeft: `4px solid ${approved ? brand.green : brand.orange}`,
-            background: approved ? "#15332DF0" : "#14252DEB",
-            color: approved ? brand.green : "#FF976E",
-            fontSize: 24,
-            fontWeight: 600,
-            letterSpacing: 1,
-            lineHeight: 1.45,
-          }}
-        >
-          {
-            [
-              "STRUCTURAL LOAD EXCEEDED",
-              "STRUCTURAL LOAD EXCEEDED",
-              "REINFORCEMENT IN PROGRESS",
-              "STRUCTURAL SOLUTION APPROVED",
-            ][phase]
-          }
-        </div>
-        <div
-          style={{
-            fontSize: 14,
-            letterSpacing: 2,
-            color: "#C5D7E0",
-            marginTop: 23,
-          }}
-        >
-          {
-            [
-              "01 / EXCESSIVE PRESENT LOAD",
-              "02 / STRUCTURAL ANALYSIS",
-              "03 / REINFORCEMENT",
-              "04 / APPROVAL",
-            ][phase]
-          }
-        </div>
-        <div
-          style={{
-            fontSize: 19,
-            color: "#DAE6E9",
-            marginTop: 15,
-            lineHeight: 1.65,
-            maxWidth: 465,
-          }}
-        >
-          {
-            [
-              "Christmas storage is putting the primary beam under visible distress.",
-              "Trace the load through the beam and down to its supports.",
-              "Strengthen the beam. Add supports. Redistribute the load.",
-              "A reinforced frame. A clear load path. Ready for Christmas.",
-            ][phase]
-          }
-        </div>
-      </div>
-      <div
-        style={{
-          position: "absolute",
-          left: 100,
-          top: 635,
-          width: 510,
-          padding: "18px 22px",
-          background: "#14252DEB",
-          borderTop: `1px solid ${brand.orange}`,
-          opacity: ease(f, 85, 110) * (1 - ease(f, 165, 187)),
-        }}
-      >
-        <div
-          style={{
-            fontSize: 13,
-            letterSpacing: 3,
-            color: brand.blue,
-            marginBottom: 15,
-          }}
-        >
-          ILLUSTRATIVE LOAD ASSESSMENT
-        </div>
-        <div style={{ fontSize: 26, lineHeight: 1.65 }}>
-          w = (G + Q) / L<br />R<sub style={{ fontSize: 17 }}>A</sub> + R
-          <sub style={{ fontSize: 17 }}>B</sub> = wL
-        </div>
-        <div style={{ fontSize: 12, color: "#AAC3CE", marginTop: 12 }}>
-          G: self-weight · Q: presents · L: span
-          <br />
-          Uniform-load, simply supported idealisation
-        </div>
-      </div>
-      {approved ? (
-        <AnimatedTypography
-          delay={270}
-          style={{
-            position: "absolute",
-            left: 100,
-            top: 635,
-            width: 600,
-            fontSize: 47,
-            lineHeight: 1.2,
-            fontWeight: 600,
-            letterSpacing: -1,
-          }}
-        >
-          BUILT FOR
-          <br />
-          <span style={{ color: brand.orange }}>THE BIG NIGHT</span>
-        </AnimatedTypography>
-      ) : null}
+      <ScriptSidebar scene={2} />
       <div
         style={{
           position: "absolute",

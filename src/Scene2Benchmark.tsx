@@ -1,3 +1,4 @@
+import { ScriptSidebar } from "./ScriptSidebar";
 import React from "react";
 import {
   AbsoluteFill,
@@ -186,7 +187,7 @@ export const Scene2Analysis = () => {
               <rect
                 x="1132"
                 y="604"
-                width="280"
+                width="340"
                 height="65"
                 rx="3"
                 fill="#14252DEB"
@@ -207,101 +208,7 @@ export const Scene2Analysis = () => {
           </svg>
         </div>
       </div>
-      <div
-        style={{
-          position: "absolute",
-          left: 100,
-          top: 390,
-          width: 550,
-          opacity: ease(f, 12, 28),
-          transform: `translateY(${(1 - ease(f, 12, 28)) * 15}px)`,
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            gap: 15,
-            alignItems: "center",
-            padding: "18px 22px",
-            background: solved ? "#15332DEC" : "#17252DF5",
-            borderLeft: `5px solid ${solved ? brand.green : brand.orange}`,
-            boxShadow: "0 12px 35px #0003",
-          }}
-        >
-          <div
-            style={{
-              fontSize: 31,
-              color: solved ? brand.green : brand.orange,
-              opacity: solved ? 1 : 0.65 + Math.sin(f / 7) * 0.35,
-            }}
-          >
-            {solved ? "✓" : "!"}
-          </div>
-          <div
-            style={{
-              fontSize: 23,
-              fontWeight: 600,
-              letterSpacing: 1,
-              lineHeight: 1.45,
-              color: solved ? brand.green : "#FF8F62",
-            }}
-          >
-            {solved ? "RUNWAY CLEAR" : "RUNWAY DRAINAGE ISSUE DETECTED"}
-          </div>
-        </div>
-        <div
-          style={{
-            marginTop: 24,
-            fontSize: 14,
-            letterSpacing: 3,
-            color: "#C6D8E1",
-          }}
-        >
-          {
-            ["01 / PROBLEM", "02 / ENGINEERING SOLUTION", "03 / RESOLVED"][
-              phase
-            ]
-          }
-        </div>
-        <div
-          style={{
-            fontSize: 19,
-            lineHeight: 1.65,
-            color: "#D3E2E8",
-            marginTop: 12,
-            maxWidth: 400,
-          }}
-        >
-          {
-            [
-              "Standing water across the runway.",
-              "Collect. Convey. Discharge.",
-              "Surface water cleared. Ready for Christmas.",
-            ][phase]
-          }
-        </div>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: 10,
-            fontSize: 14,
-            letterSpacing: 2,
-            color: solved ? brand.green : brand.orange,
-            marginTop: 25,
-          }}
-        >
-          <span
-            style={{
-              width: 7,
-              height: 7,
-              borderRadius: "50%",
-              background: "currentColor",
-            }}
-          />
-          {solved ? "RUNWAY CLEAR" : "DRAINAGE ISSUE"}
-        </div>
-      </div>
+      <ScriptSidebar scene={1} />
       <div
         style={{
           position: "absolute",

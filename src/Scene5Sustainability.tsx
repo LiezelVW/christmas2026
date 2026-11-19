@@ -1,3 +1,4 @@
+import { ScriptSidebar } from "./ScriptSidebar";
 import React from "react";
 import { Img, staticFile, useCurrentFrame } from "remotion";
 import { CinematicPlate, Status, SmallLabel, progress } from "./CampaignDesign";
@@ -45,90 +46,7 @@ export const Scene5Analysis = () => {
   const annotations = progress(f, 100, 130) * (1 - progress(f, 250, 270));
   return (
     <>
-      <div
-        style={{
-          position: "absolute",
-          left: 100,
-          top: 390,
-          width: 610,
-          opacity: progress(f, 10, 28),
-        }}
-      >
-        <Status approved={approved}>
-          {approved
-            ? "SUSTAINABILITY STRATEGY APPROVED"
-            : "CHRISTMAS DELIVERY — ENVIRONMENTAL REVIEW"}
-        </Status>
-        <div style={{ marginTop: 23 }}>
-          <SmallLabel>
-            {approved
-              ? "03 / APPROVED STRATEGY"
-              : f < 110
-                ? "01 / ENVIRONMENTAL ASSESSMENT"
-                : "02 / RENEWABLE DELIVERY CONCEPT"}
-          </SmallLabel>
-        </div>
-        <div style={{ marginTop: 20, width: 475 }}>
-          {[
-            { name: "ENERGY SOURCE", state: "WIND + SOLAR", at: 100 },
-            { name: "DELIVERY PROPULSION", state: "REINDEER POWER", at: 155 },
-            { name: "CARBON ASSESSMENT", state: "SCHEMATIC REVIEW", at: 210 },
-          ].map((r, i) => (
-            <div
-              key={r.name}
-              style={{
-                borderBottom: "1px solid #9CBDC42B",
-                padding: "14px 0",
-                opacity: progress(f, 18 + i * 12, 38 + i * 12),
-                display: "flex",
-                alignItems: "center",
-                gap: 12,
-              }}
-            >
-              <div
-                style={{
-                  width: 6,
-                  height: 6,
-                  borderRadius: "50%",
-                  background: f > r.at ? brand.green : brand.orange,
-                }}
-              />
-              <div
-                style={{
-                  flex: 1,
-                  fontSize: 12,
-                  letterSpacing: 2,
-                  color: "#C3D5DF",
-                }}
-              >
-                {r.name}
-              </div>
-              <div
-                style={{
-                  fontSize: 13,
-                  color: f > r.at ? brand.green : "#ACC3CD",
-                  fontWeight: 500,
-                }}
-              >
-                {f > r.at ? r.state : "ASSESSING"}
-              </div>
-            </div>
-          ))}
-        </div>
-        <div
-          style={{
-            marginTop: 24,
-            color: "#DCE8EB",
-            fontSize: 19,
-            lineHeight: 1.7,
-            maxWidth: 450,
-          }}
-        >
-          {approved
-            ? "Renewable energy. Reindeer power. A considered Christmas delivery plan."
-            : "Assess the energy source, delivery system and operational carbon boundary."}
-        </div>
-      </div>
+      <ScriptSidebar scene={4} />
       <AnimatedChristmasTeam
         mode="standing"
         width={1010}
@@ -176,22 +94,7 @@ export const Scene5Analysis = () => {
           fill="none"
         />
       </svg>
-      {approved ? (
-        <div
-          style={{
-            position: "absolute",
-            left: 100,
-            top: 770,
-            opacity: progress(f, 265, 285),
-            fontSize: 40,
-            letterSpacing: 1,
-            fontWeight: 600,
-            color: brand.orange,
-          }}
-        >
-          A GREENER CHRISTMAS
-        </div>
-      ) : null}
+
       <div
         style={{
           position: "absolute",
