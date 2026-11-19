@@ -1,0 +1,5 @@
+tevy Reindeer, pinned v1, 27 October 2026. Creator lists CC0 1.0.
+Source: https://tevy.dev/models/reindeer
+Model: https://tevy.dev/models/reindeer/v1/lod0.glb
+CC0 legal text: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+Downloaded and inspected for the DBFL isolated flight test, 19 November 2026.

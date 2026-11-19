@@ -1,0 +1,34 @@
+# Dependencies and local tooling
+node_modules/
+.pnp.*
+
+# Generated renders, bundles and caches
+out/
+dist/
+build/
+coverage/
+.remotion/
+.cache/
+*.mp4
+*.mov
+*.webm
+*.log
+*.tsbuildinfo
+
+# Temporary and operating-system files
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.env
+.env.*
+!.env.example
+
+# Earlier proof-of-concept projects and unused raw imports
+flight-poc/
+takeoff-preview/
+public/assets/staff/
+public/assets/scene-4/osm-dublin-source.json

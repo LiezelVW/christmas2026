@@ -1,0 +1,36 @@
+{
+  "name": "dbfl-operation-christmas-2026",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "remotion studio src/index.ts --port=3100",
+    "check": "tsc --noEmit",
+    "render:scene1": "remotion render src/index.ts Scene1 out/scene-1.mp4 --scale=0.5 --codec=h264",
+    "render:test": "remotion render src/index.ts Christmas2026 out/christmas-preview.mp4 --scale=0.5 --codec=h264 --concurrency=4",
+    "render": "remotion render src/index.ts Christmas2026 out/dbfl-christmas-2026.mp4 --codec=h264 --crf=18 --concurrency=4",
+    "format": "prettier --write src",
+    "render:scene2": "remotion render src/index.ts Scene2Benchmark out/scene-2-drainage-v3.mp4 --codec=h264 --crf=18 --concurrency=4",
+    "render:scene3": "remotion render src/index.ts Scene3Benchmark out/scene-3-structural-v1.mp4 --codec=h264 --crf=18 --concurrency=4",
+    "render:transition3": "remotion render src/index.ts Christmas2026 out/scene-3-to-4-check.mp4 --frames=850-949 --scale=0.5 --codec=h264",
+    "render:scene4": "remotion render src/index.ts Scene4 out/scene-4.mp4 --codec=h264 --crf=18 --concurrency=2",
+    "render:scene5": "remotion render src/index.ts Scene5 out/scene-5.mp4 --codec=h264 --crf=18 --concurrency=2",
+    "render:scene6": "remotion render src/index.ts Scene6 out/scene-6.mp4 --codec=h264 --crf=18 --concurrency=2",
+    "verify:project": "node scripts/verify-upload-build.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.484",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.484",
+    "@remotion/three": "4.0.484",
+    "@react-three/fiber": "9.4.0",
+    "three": "0.181.2"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.0",
+    "@types/react-dom": "19.1.0",
+    "prettier": "^3.10.1",
+    "typescript": "5.9.3",
+    "@types/three": "0.181.0"
+  }
+}
