@@ -180,26 +180,6 @@ export const Scene3Analysis = () => {
                 fill="none"
                 strokeWidth="2"
               />
-              <rect
-                x="1245"
-                y="615"
-                width="360"
-                height="70"
-                fill="#14252DEB"
-                rx="3"
-              />
-              <text
-                x="1265"
-                y="642"
-                fill="white"
-                fontSize="20"
-                letterSpacing="2"
-              >
-                PRIMARY STORAGE BEAM
-              </text>
-              <text x="1265" y="669" fill="#C3D8DF" fontSize="16">
-                Present load → beam → columns
-              </text>
             </g>
             <g opacity={reinforce}>
               <path
@@ -236,28 +216,64 @@ export const Scene3Analysis = () => {
                   />
                 </g>
               ))}
-              <rect
-                x="1200"
-                y="715"
-                width="330"
-                height="75"
-                fill="#14252DEB"
-                rx="3"
-              />
-              <text
-                x="1220"
-                y="744"
-                fill="white"
-                fontSize="20"
-                letterSpacing="2"
-              >
-                ADDITIONAL SUPPORTS
-              </text>
-              <text x="1220" y="771" fill="#C3D8DF" fontSize="16">
-                Redistributed load path
-              </text>
             </g>
           </svg>
+          <div
+            data-engineering-label="primary-beam"
+            style={{
+              position: "absolute",
+              left: 1245,
+              top: 615,
+              width: 390,
+              padding: "14px 20px",
+              background: "#14252D",
+              borderRadius: 3,
+              overflow: "hidden",
+              opacity: ease(f, 95, 120) * (1 - ease(f, 168, 185)),
+            }}
+          >
+            <div
+              style={{
+                fontSize: 20,
+                letterSpacing: 2,
+                color: "white",
+                whiteSpace: "nowrap",
+              }}
+            >
+              PRIMARY STORAGE BEAM
+            </div>
+            <div style={{ fontSize: 16, color: "#C3D8DF", marginTop: 8 }}>
+              Present load → beam → columns
+            </div>
+          </div>
+          <div
+            data-engineering-label="additional-supports"
+            style={{
+              position: "absolute",
+              left: 1200,
+              top: 715,
+              width: 360,
+              padding: "14px 20px",
+              background: "#14252D",
+              borderRadius: 3,
+              overflow: "hidden",
+              opacity: reinforce,
+            }}
+          >
+            <div
+              style={{
+                fontSize: 20,
+                letterSpacing: 2,
+                color: "white",
+                whiteSpace: "nowrap",
+              }}
+            >
+              ADDITIONAL SUPPORTS
+            </div>
+            <div style={{ fontSize: 16, color: "#C3D8DF", marginTop: 8 }}>
+              Redistributed load path
+            </div>
+          </div>
         </div>
       </div>
       <ScriptSidebar scene={2} />

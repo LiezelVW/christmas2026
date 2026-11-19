@@ -1,10 +1,10 @@
 {
   "project": "DBFL Operation Christmas 2026",
-  "version": "approved film with stable typography, script-based left sidebars, no dialogue subtitles or voiceover",
-  "file_count_excluding_this_inventory": 321,
+  "version": "stable structural HTML callouts and compact Montserrat closing tagline; no voiceover or bottom subtitles",
+  "file_count_excluding_this_inventory": 322,
   "asset_files": 279,
   "prepared_staff_portraits": 248,
-  "total_bytes": 62020629,
+  "total_bytes": 62022457,
   "largest_file": {
     "path": "public/assets/characters/santa-claus-rigged.glb",
     "bytes": 13527540,
@@ -42,8 +42,8 @@
     },
     {
       "path": "docs/TEXT-RENDERING.md",
-      "bytes": 1028,
-      "sha256": "0af9ca7297f5a36bb029d50353da1b520756a8c090c30b69d4d0f2fdbba68db8"
+      "bytes": 1380,
+      "sha256": "2ad3cffd2c3a4702217623a2e92397f37413aa870e44b43d6c13caeb69deb9c8"
     },
     {
       "path": "docs/VALIDATION.md",
@@ -1471,6 +1471,11 @@
       "sha256": "9795a00afc10f6e9948aaa571f83476ea066912261d68b7903c1c441d8ea28eb"
     },
     {
+      "path": "scripts/check-structural-labels.mjs",
+      "bytes": 805,
+      "sha256": "4e00a038ce744e2cae4a975dd07ef663cdb2b4debcf1062bdc85360a38525b54"
+    },
+    {
       "path": "scripts/check-text-stability.mjs",
       "bytes": 613,
       "sha256": "f4cec8b8cea198ff927122b17cf6410eab4499065d296041116fb028eda20fdc"
@@ -1552,8 +1557,8 @@
     },
     {
       "path": "src/Scene3Structural.tsx",
-      "bytes": 8496,
-      "sha256": "bf0bfc6045eaf5d6591756f75f1b5ad6921d41e283ced365584f6326eee38381"
+      "bytes": 9018,
+      "sha256": "1ed218fd28e34fa337cd314e6434c057058c85ddaec98e5e85cdfed1de32f459"
     },
     {
       "path": "src/Scene4Transport.tsx",
@@ -1567,8 +1572,8 @@
     },
     {
       "path": "src/Scene6Finale.tsx",
-      "bytes": 8537,
-      "sha256": "5837732679e723e9cb60723d409c821fa8e4ca4d58b666220eaacc43e8ff6820"
+      "bytes": 8686,
+      "sha256": "6b6b06da96c3f7a1c8f4f7456173b616e728dae74b370543f48656e66def4349"
     },
     {
       "path": "src/Scenes.tsx",

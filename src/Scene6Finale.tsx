@@ -284,13 +284,15 @@ const EndFrame = () => {
           top: 655,
           left: 150,
           right: 150,
-          fontSize: 26,
-          letterSpacing: 5,
+          fontSize: 30,
+          letterSpacing: 0,
           color: "#D7E4E9",
           opacity: progress(f, 605, 635),
         }}
       >
-        Engineering Sustainable Futures.
+        <span style={{ fontWeight: 700 }}>Engineering</span>{" "}
+        <span style={{ fontWeight: 500 }}>Sustainable</span>{" "}
+        <span style={{ fontWeight: 400 }}>Futures.</span>
       </div>
       <div
         style={{
