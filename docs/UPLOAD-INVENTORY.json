@@ -1,10 +1,10 @@
 {
   "project": "DBFL Operation Christmas 2026",
-  "version": "latest approved film with text corrections and restored approved takeoff mount",
-  "file_count_excluding_this_inventory": 316,
+  "version": "approved 90-second film without voiceover",
+  "file_count_excluding_this_inventory": 317,
   "asset_files": 279,
   "prepared_staff_portraits": 248,
-  "total_bytes": 62029339,
+  "total_bytes": 62029986,
   "largest_file": {
     "path": "public/assets/characters/santa-claus-rigged.glb",
     "bytes": 13527540,
@@ -16,7 +16,8 @@
     "generated renders, MP4s, caches and temporary files",
     "flight-poc/ and takeoff-preview/",
     "public/assets/staff/ raw originals, including the PSD; all 248 prepared portraits are included",
-    "raw OpenStreetMap download; processed geometry and map SVG are included"
+    "raw OpenStreetMap download; processed geometry and map SVG are included",
+    "supplied original voiceover, intermediate synced WAV and voiceover timing notes; retained locally"
   ],
   "files": [
     {
@@ -26,8 +27,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 450,
-      "sha256": "6b5dc24cdb915a62269a5693bd19295fe37ea33daaef0c8f49d238d123ccaa9f"
+      "bytes": 666,
+      "sha256": "04fb8c0182f7dfd56e9f477b783ad802bbf9bec6a9f3f306cf8bbd3f9255d4cb"
     },
     {
       "path": ".nvmrc",
@@ -43,6 +44,11 @@
       "path": "docs/VALIDATION.md",
       "bytes": 1429,
       "sha256": "872126744ae13b1821a0995a137ced9bb757ac03c79ee010d5c8d3829dd7b82d"
+    },
+    {
+      "path": "docs/VOICEOVER.md",
+      "bytes": 431,
+      "sha256": "e8fe5296e80078fc89e48d3d22e45ca9c3c2023359e93c13a712b65a610c03c7"
     },
     {
       "path": "package-lock.json",

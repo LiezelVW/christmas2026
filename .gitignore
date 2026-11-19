@@ -32,3 +32,8 @@ flight-poc/
 takeoff-preview/
 public/assets/staff/
 public/assets/scene-4/osm-dublin-source.json
+
+# Supplied narration retained locally; the approved film has no voiceover
+public/assets/audio/voiceover-original-2026-11-19.mp3
+public/assets/audio/voiceover-synced-90s.wav
+public/assets/audio/voiceover-timing.json
