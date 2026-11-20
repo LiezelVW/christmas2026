@@ -1,10 +1,10 @@
 {
   "project": "DBFL Operation Christmas 2026",
-  "version": "Draft 1 preserved with separate Teams call alternative starring John Hayes",
-  "file_count_excluding_this_inventory": 325,
+  "version": "Draft 1 preserved; separate Teams call with Santa and all twelve supplied directors",
+  "file_count_excluding_this_inventory": 326,
   "asset_files": 279,
   "prepared_staff_portraits": 248,
-  "total_bytes": 62037327,
+  "total_bytes": 62040637,
   "largest_file": {
     "path": "public/assets/characters/santa-claus-rigged.glb",
     "bytes": 13527540,
@@ -42,8 +42,8 @@
     },
     {
       "path": "docs/TEAMS-VERSION.md",
-      "bytes": 1165,
-      "sha256": "3122ac3be878cc76cab51f3ad0b5c6b5bd32bf7cf290eed3de01127930c73da1"
+      "bytes": 1430,
+      "sha256": "33c167108bcc3b750fb4d434f4de2f8832ed34358310b54116f28a28f51b7c8b"
     },
     {
       "path": "docs/TEXT-RENDERING.md",
@@ -1602,8 +1602,8 @@
     },
     {
       "path": "src/TeamsCallIntro.tsx",
-      "bytes": 11811,
-      "sha256": "7aa4446dd0f8790b674e238b4aaade2923ec8cb03c0bbb74802235f6fae4676e"
+      "bytes": 13518,
+      "sha256": "e5959d77e4cc8c90f4c6c34a5ec3f634397def2179cc47227d9cd492a04e9cf3"
     },
     {
       "path": "src/components.tsx",
@@ -1614,6 +1614,11 @@
       "path": "src/config.ts",
       "bytes": 4003,
       "sha256": "30ac20185df38f31a1e68e1575803315b8164dd9fa827ec4639e906a91d54a5d"
+    },
+    {
+      "path": "src/directors.json",
+      "bytes": 1338,
+      "sha256": "dc19f2c745bfafb71a2bf1efc31e0e5a1931779a781a9768b8aac7a789015128"
     },
     {
       "path": "src/dublin-roads.json",

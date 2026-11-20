@@ -9,3 +9,5 @@ The original `Christmas2026` composition and default `npm run render` remain Dra
 Scenes 2–6, the approved runway takeoff, employee mosaic and closing brand message are unchanged. Both versions currently have no voiceover or bottom subtitles.
 
 The supplied Word brief also describes live office filming. Those additional shots are outside this opening change and would require the corresponding footage.
+
+John answers first, followed by the twelve-director gallery using the supplied names and division/position labels in `src/directors.json`. Robert Kelly uses the existing staff entry named Rob Kelly (`staff-207.jpg`). All other names match the staff index exactly.

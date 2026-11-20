@@ -1,3 +1,4 @@
+import directors from "./directors.json";
 import React from "react";
 import {
   AbsoluteFill,
@@ -216,43 +217,91 @@ export const TeamsCallIntro = () => {
             opacity: joined ? p(f, 75, 84) : 0.25,
           }}
         >
+          {f < 125 ? (
+            <div
+              style={{
+                flex: 1,
+                position: "relative",
+                borderRadius: 8,
+                overflow: "hidden",
+                background: "#343434",
+              }}
+            >
+              <Img
+                src={staticFile("assets/staff-mosaic/staff-125.jpg")}
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  filter: "blur(30px) brightness(.4)",
+                  transform: "scale(1.1)",
+                }}
+              />
+              <Img
+                alt="John Hayes, DBFL"
+                src={staticFile("assets/staff-mosaic/staff-125.jpg")}
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                }}
+              />
+              <Name>John Hayes · Chairman – Structures</Name>
+            </div>
+          ) : (
+            <div
+              data-directors-gallery
+              style={{
+                flex: 1,
+                display: "grid",
+                gridTemplateColumns: "repeat(4,1fr)",
+                gridTemplateRows: "repeat(3,1fr)",
+                gap: 12,
+              }}
+            >
+              {directors.map((person) => (
+                <div
+                  key={person.name}
+                  style={{
+                    position: "relative",
+                    background: "#333238",
+                    borderRadius: 8,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    flexDirection: "column",
+                    gap: 7,
+                    overflow: "hidden",
+                  }}
+                >
+                  <Img
+                    alt={person.name}
+                    src={staticFile(person.src)}
+                    style={{
+                      width: 122,
+                      height: 122,
+                      objectFit: "cover",
+                      borderRadius: "50%",
+                      marginTop: -20,
+                    }}
+                  />
+                  <div style={{ fontSize: 18, fontWeight: 600 }}>
+                    {person.name}
+                  </div>
+                  <div style={{ fontSize: 14, color: "#CAC7D4" }}>
+                    {person.role}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
           <div
             style={{
-              flex: 1,
-              position: "relative",
-              borderRadius: 8,
-              overflow: "hidden",
-              background: "#343434",
-            }}
-          >
-            <Img
-              src={staticFile("assets/staff-mosaic/staff-125.jpg")}
-              style={{
-                position: "absolute",
-                inset: 0,
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-                filter: "blur(30px) brightness(.4)",
-                transform: "scale(1.1)",
-              }}
-            />
-            <Img
-              alt="John Hayes, DBFL"
-              src={staticFile("assets/staff-mosaic/staff-125.jpg")}
-              style={{
-                position: "absolute",
-                inset: 0,
-                width: "100%",
-                height: "100%",
-                objectFit: "contain",
-              }}
-            />
-            <Name>John Hayes · DBFL</Name>
-          </div>
-          <div
-            style={{
-              width: 490,
+              width: f >= 125 ? 360 : 490,
               position: "relative",
               borderRadius: 8,
               background: "#302E42",
@@ -383,7 +432,7 @@ export const TeamsCallIntro = () => {
             style={{
               position: "absolute",
               right: 56,
-              bottom: 43,
+              bottom: 110,
               padding: "16px 21px",
               borderLeft: "4px solid #F15A29",
               background: "#12232FF5",
