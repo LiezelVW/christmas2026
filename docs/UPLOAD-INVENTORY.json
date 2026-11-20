@@ -1,10 +1,10 @@
 {
   "project": "DBFL Operation Christmas 2026",
-  "version": "stable structural HTML callouts and compact Montserrat closing tagline; no voiceover or bottom subtitles",
-  "file_count_excluding_this_inventory": 322,
+  "version": "Draft 1 preserved with separate Teams call alternative starring John Hayes",
+  "file_count_excluding_this_inventory": 325,
   "asset_files": 279,
   "prepared_staff_portraits": 248,
-  "total_bytes": 62022457,
+  "total_bytes": 62037327,
   "largest_file": {
     "path": "public/assets/characters/santa-claus-rigged.glb",
     "bytes": 13527540,
@@ -37,8 +37,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 4287,
-      "sha256": "adb9a6e804ae54a0a403f45bc63ea7c53a05ccbced45fac9500f9384a6597f71"
+      "bytes": 4668,
+      "sha256": "f07fe9f18d58de90b627a9324378bb6ae756d7f4375a4513ba874bfb3be575c2"
+    },
+    {
+      "path": "docs/TEAMS-VERSION.md",
+      "bytes": 1165,
+      "sha256": "3122ac3be878cc76cab51f3ad0b5c6b5bd32bf7cf290eed3de01127930c73da1"
     },
     {
       "path": "docs/TEXT-RENDERING.md",
@@ -62,8 +67,8 @@
     },
     {
       "path": "package.json",
-      "bytes": 1806,
-      "sha256": "ea1599a69e98b2dab870cf63a5645cb2115d8fb3127a1e678b4051b30bdc1a39"
+      "bytes": 1949,
+      "sha256": "4de90e53806f62f431c7b0fba0130f3f34cb217a054c9eafe1986776365d97c9"
     },
     {
       "path": "public/assets/branding/dbfl-logo.svg",
@@ -1476,6 +1481,11 @@
       "sha256": "4e00a038ce744e2cae4a975dd07ef663cdb2b4debcf1062bdc85360a38525b54"
     },
     {
+      "path": "scripts/check-teams-call.mjs",
+      "bytes": 810,
+      "sha256": "84608a560cd22183d9631e204a03b1325f6d52a4ceb136cad04f70123265195e"
+    },
+    {
       "path": "scripts/check-text-stability.mjs",
       "bytes": 613,
       "sha256": "f4cec8b8cea198ff927122b17cf6410eab4499065d296041116fb028eda20fdc"
@@ -1547,8 +1557,8 @@
     },
     {
       "path": "src/Root.tsx",
-      "bytes": 4213,
-      "sha256": "9ed45bff3e014952f16d373734c021f4b1af2798fdd5160c66c6dd40b29efb5a"
+      "bytes": 4773,
+      "sha256": "7979d72f98eddd258ce772dd51f1abaf3721e2b9593996537dd1e9720ad98b4a"
     },
     {
       "path": "src/Scene2Benchmark.tsx",
@@ -1589,6 +1599,11 @@
       "path": "src/StaffPhotoMosaic.tsx",
       "bytes": 3398,
       "sha256": "d06ddc4bab97f0f1781b3cd6b994991e3f6dca3823627f5c03c02c1aebbe3645"
+    },
+    {
+      "path": "src/TeamsCallIntro.tsx",
+      "bytes": 11811,
+      "sha256": "7aa4446dd0f8790b674e238b4aaade2923ec8cb03c0bbb74802235f6fae4676e"
     },
     {
       "path": "src/components.tsx",

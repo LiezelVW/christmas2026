@@ -58,3 +58,7 @@ Models are CC0 assets from [tevy](https://tevy.dev/models/reindeer) and [Grab3D]
 Dependencies, generated MP4s, render bundles/caches, operating-system files, temporary files and the old `flight-poc/` and `takeoff-preview/` projects are excluded. Unused raw staff originals (including the PSD) and the raw OpenStreetMap download are also excluded; the prepared portraits, processed geometry and map artwork needed to reproduce the film are included. No local originals were deleted.
 
 All included assets are below GitHub’s 100 MB individual-file limit, so this repository uses ordinary git without LFS. The current audio slots are unpopulated; the review film is silent.
+
+## Alternative Teams opening
+
+`Christmas2026Teams` uses Santa’s incoming Teams call and John Hayes’s supplied staff photograph. Preview the ten-second opening with `TeamsCallIntro`, or render the whole alternative with `npm run render:teams`. The original `Christmas2026` composition and default render command are unchanged. See [Teams version notes](docs/TEAMS-VERSION.md).

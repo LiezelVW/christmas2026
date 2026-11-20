@@ -15,7 +15,8 @@
     "render:scene4": "remotion render src/index.ts Scene4 out/scene-4.mp4 --codec=h264 --crf=18 --concurrency=2",
     "render:scene5": "remotion render src/index.ts Scene5 out/scene-5.mp4 --codec=h264 --crf=18 --concurrency=2",
     "render:scene6": "remotion render src/index.ts Scene6 out/scene-6.mp4 --codec=h264 --crf=18 --concurrency=2",
-    "verify:project": "node scripts/verify-upload-build.mjs"
+    "verify:project": "node scripts/verify-upload-build.mjs",
+    "render:teams": "remotion render src/index.ts Christmas2026Teams out/dbfl-christmas-2026-teams.mp4 --codec=h264 --crf=18 --concurrency=4"
   },
   "dependencies": {
     "@remotion/cli": "4.0.484",
