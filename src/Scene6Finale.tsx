@@ -1,3 +1,4 @@
+import { AnimatedChristmasTeam } from "./AnimatedChristmasTeam";
 import { ScriptSidebar } from "./ScriptSidebar";
 import React from "react";
 import {
@@ -199,7 +200,7 @@ const MissionControl = () => {
     </AbsoluteFill>
   );
 };
-const People = () => {
+const People = ({ flypast = false }: { flypast?: boolean }) => {
   const f = useCurrentFrame();
   return (
     <AbsoluteFill
@@ -222,6 +223,18 @@ const People = () => {
         From all of us. To all of you.
       </div>
       <StaffPhotoMosaic startFrame={325} />
+      {flypast && f >= 340 && f < 470 ? (
+        <AnimatedChristmasTeam
+          mode="flight"
+          width={850}
+          height={330}
+          style={{
+            left: interpolate(f, [340, 470], [-880, 1950]),
+            top: 195 - Math.sin(progress(f, 340, 470) * Math.PI) * 80,
+            zIndex: 4,
+          }}
+        />
+      ) : null}
       <div
         style={{
           position: "absolute",
@@ -321,7 +334,11 @@ const EndFrame = () => {
     </AbsoluteFill>
   );
 };
-export const Scene6Finale = () => {
+export const Scene6Finale = ({
+  mosaicFlypast = false,
+}: {
+  mosaicFlypast?: boolean;
+}) => {
   const f = useCurrentFrame();
   return (
     <AbsoluteFill
@@ -344,7 +361,7 @@ export const Scene6Finale = () => {
           <ApprovedRunwayTakeoff />
         </Sequence>
 
-        {f >= 325 && f < 565 ? <People /> : null}
+        {f >= 325 && f < 565 ? <People flypast={mosaicFlypast} /> : null}
         {f >= 540 ? <EndFrame /> : null}
       </div>
     </AbsoluteFill>

@@ -1,10 +1,10 @@
 {
   "project": "DBFL Operation Christmas 2026",
-  "version": "Draft 1 preserved; separate Teams call with Santa and all twelve supplied directors",
-  "file_count_excluding_this_inventory": 326,
+  "version": "Separate twelve-director Teams version with rigged Santa mosaic fly-past; Draft 1 unchanged",
+  "file_count_excluding_this_inventory": 327,
   "asset_files": 279,
   "prepared_staff_portraits": 248,
-  "total_bytes": 62040637,
+  "total_bytes": 62043011,
   "largest_file": {
     "path": "public/assets/characters/santa-claus-rigged.glb",
     "bytes": 13527540,
@@ -42,8 +42,8 @@
     },
     {
       "path": "docs/TEAMS-VERSION.md",
-      "bytes": 1430,
-      "sha256": "33c167108bcc3b750fb4d434f4de2f8832ed34358310b54116f28a28f51b7c8b"
+      "bytes": 1968,
+      "sha256": "70bd4099d0ed7d6aa677268ed6aaae142cb566fed378a91375b397bf82f6d56a"
     },
     {
       "path": "docs/TEXT-RENDERING.md",
@@ -1471,6 +1471,11 @@
       "sha256": "fa64e8cea421bb6d4222a742330c3e3c2b47f856ecf49e9508282f52a791b5a9"
     },
     {
+      "path": "scripts/check-mosaic-flypast.mjs",
+      "bytes": 813,
+      "sha256": "9b9cdde67bcaa894bc670c4514f736a4d046c44582e96980d74ed1536d9444cf"
+    },
+    {
       "path": "scripts/check-scene3-transition.mjs",
       "bytes": 1010,
       "sha256": "9795a00afc10f6e9948aaa571f83476ea066912261d68b7903c1c441d8ea28eb"
@@ -1557,8 +1562,8 @@
     },
     {
       "path": "src/Root.tsx",
-      "bytes": 4773,
-      "sha256": "7979d72f98eddd258ce772dd51f1abaf3721e2b9593996537dd1e9720ad98b4a"
+      "bytes": 5250,
+      "sha256": "3edb3b7dc26f64b8e8ee8f9ee94746a66558bdf525db1edd429f7c227c06663d"
     },
     {
       "path": "src/Scene2Benchmark.tsx",
@@ -1582,8 +1587,8 @@
     },
     {
       "path": "src/Scene6Finale.tsx",
-      "bytes": 8686,
-      "sha256": "6b6b06da96c3f7a1c8f4f7456173b616e728dae74b370543f48656e66def4349"
+      "bytes": 9232,
+      "sha256": "5684177a6e90bfffd4ace37384c28154f237b234d2a295d25ca5125b6498ccb7"
     },
     {
       "path": "src/Scenes.tsx",

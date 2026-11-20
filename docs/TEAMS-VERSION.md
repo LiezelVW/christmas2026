@@ -11,3 +11,9 @@ Scenes 2–6, the approved runway takeoff, employee mosaic and closing brand mes
 The supplied Word brief also describes live office filming. Those additional shots are outside this opening change and would require the corresponding footage.
 
 John answers first, followed by the twelve-director gallery using the supplied names and division/position labels in `src/directors.json`. Robert Kelly uses the existing staff entry named Rob Kelly (`staff-207.jpg`). All other names match the staff index exactly.
+
+## Mosaic fly-past
+
+The alternative version adds a five-second Santa, sleigh and reindeer fly-past as the employee mosaic appears, using the existing skinned GLBs and frame-based skeletal animation. The team exits before the closing brand card. `MosaicFlypastPreview` is a standalone 240-frame review composition. This is enabled only in `Christmas2026Teams`; the original film and its mosaic remain unchanged.
+
+Real employee footage will be integrated after the planned shoot. Current director tiles are the supplied staff photographs.

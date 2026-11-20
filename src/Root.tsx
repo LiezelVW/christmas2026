@@ -26,11 +26,17 @@ import { Scene4Backdrop } from "./Scene4Transport";
 import { Scene5Backdrop } from "./Scene5Sustainability";
 import { AudioSlotPlayer } from "./AudioTimeline";
 const views = [Scene1, Civil, Structural, Transport, Sustainability, Finale];
-const Shot = ({ index }: { index: number }) => {
+const Shot = ({
+  index,
+  mosaicFlypast = false,
+}: {
+  index: number;
+  mosaicFlypast?: boolean;
+}) => {
   const f = useCurrentFrame();
   const scene = scenes[index];
   const View = views[index];
-  if (index === 5) return <Finale />;
+  if (index === 5) return <Finale mosaicFlypast={mosaicFlypast} />;
   return (
     <AnimatedScene
       backdrop={
@@ -68,7 +74,11 @@ export const Film = ({ teamsCall = false }: { teamsCall?: boolean }) => {
             durationInFrames={s.duration * FPS}
             name={s.department}
           >
-            {teamsCall && i === 0 ? <TeamsCallIntro /> : <Shot index={i} />}
+            {teamsCall && i === 0 ? (
+              <TeamsCallIntro />
+            ) : (
+              <Shot index={i} mosaicFlypast={teamsCall} />
+            )}
           </Sequence>
         );
       })}
@@ -100,6 +110,11 @@ export const Film = ({ teamsCall = false }: { teamsCall?: boolean }) => {
   );
 };
 const TeamsFilm = () => <Film teamsCall />;
+const MosaicFlypastPreview = () => (
+  <Sequence from={-325}>
+    <Finale mosaicFlypast />
+  </Sequence>
+);
 const First = () => <Shot index={0} />;
 const CivilBenchmark = () => <Shot index={1} />;
 const StructuralBenchmark = () => <Shot index={2} />;
@@ -109,6 +124,14 @@ export const Root = () => {
   useBrandFont();
   return (
     <>
+      <Composition
+        id="MosaicFlypastPreview"
+        component={MosaicFlypastPreview}
+        durationInFrames={240}
+        fps={FPS}
+        width={1920}
+        height={1080}
+      />
       <Composition
         id="Christmas2026Teams"
         component={TeamsFilm}
