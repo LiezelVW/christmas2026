@@ -200,7 +200,7 @@ const MissionControl = () => {
     </AbsoluteFill>
   );
 };
-const People = ({ flypast = false }: { flypast?: boolean }) => {
+const OriginalPeople = () => {
   const f = useCurrentFrame();
   return (
     <AbsoluteFill
@@ -223,18 +223,6 @@ const People = ({ flypast = false }: { flypast?: boolean }) => {
         From all of us. To all of you.
       </div>
       <StaffPhotoMosaic startFrame={325} />
-      {flypast && f >= 340 && f < 470 ? (
-        <AnimatedChristmasTeam
-          mode="flight"
-          width={850}
-          height={330}
-          style={{
-            left: interpolate(f, [340, 470], [-880, 1950]),
-            top: 195 - Math.sin(progress(f, 340, 470) * Math.PI) * 80,
-            zIndex: 4,
-          }}
-        />
-      ) : null}
       <div
         style={{
           position: "absolute",
@@ -249,6 +237,82 @@ const People = ({ flypast = false }: { flypast?: boolean }) => {
       >
         DUBLIN · CORK · GALWAY · WATERFORD
       </div>
+      <SnowParticles />
+    </AbsoluteFill>
+  );
+};
+const People = ({ flypast = false }: { flypast?: boolean }) => {
+  const f = useCurrentFrame();
+  if (!flypast) return <OriginalPeople />;
+  const flightX = interpolate(f, [325, 440], [-2100, 2100], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+  const revealEdge = flightX + 540;
+  const mosaicContent = (
+    <>
+      <div
+        style={{
+          position: "absolute",
+          left: 100,
+          top: 235,
+          fontSize: 36,
+          fontWeight: 500,
+          letterSpacing: -1,
+        }}
+      >
+        From all of us. To all of you.
+      </div>
+      <StaffPhotoMosaic startFrame={flypast ? 230 : 325} />
+      <div
+        style={{
+          position: "absolute",
+          left: 100,
+          right: 100,
+          bottom: 80,
+          textAlign: "center",
+          fontSize: 17,
+          letterSpacing: 4,
+          color: "#C1D2D9",
+        }}
+      >
+        DUBLIN · CORK · GALWAY · WATERFORD
+      </div>
+    </>
+  );
+  return (
+    <AbsoluteFill
+      style={{
+        background: "radial-gradient(ellipse at 50% 50%,#2F4D5B,#14252D 75%)",
+        opacity: progress(f, 325, 343) * (1 - progress(f, 540, 565)),
+        overflow: flypast ? "hidden" : undefined,
+      }}
+    >
+      <Chrome label="THE PEOPLE BEHIND THE PLANS" />
+      {flypast ? (
+        <AbsoluteFill
+          data-mosaic-reveal="sleigh-wipe"
+          style={{
+            maskImage: `linear-gradient(90deg, black ${revealEdge - 75}px, transparent ${revealEdge + 75}px)`,
+          }}
+        >
+          {mosaicContent}
+        </AbsoluteFill>
+      ) : (
+        mosaicContent
+      )}
+      {flypast && f >= 325 && f < 440 ? (
+        <AnimatedChristmasTeam
+          mode="flight"
+          width={2400}
+          height={1000}
+          style={{
+            left: flightX,
+            top: 25 - Math.sin(progress(f, 325, 440) * Math.PI) * 60,
+            zIndex: 4,
+          }}
+        />
+      ) : null}
       <SnowParticles />
     </AbsoluteFill>
   );

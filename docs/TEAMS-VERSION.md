@@ -14,6 +14,6 @@ John answers first, followed by the twelve-director gallery using the supplied n
 
 ## Mosaic fly-past
 
-The alternative version adds a five-second Santa, sleigh and reindeer fly-past as the employee mosaic appears, using the existing skinned GLBs and frame-based skeletal animation. The team exits before the closing brand card. `MosaicFlypastPreview` is a standalone 240-frame review composition. This is enabled only in `Christmas2026Teams`; the original film and its mosaic remain unchanged.
+The alternative version uses a large foreground Santa, sleigh and reindeer fly-by to reveal the employee mosaic. A soft horizontal mask follows the trailing sleigh edge, so portraits appear behind the team rather than being visible before the pass. The 4.6-second transition reuses the existing skinned GLBs and frame-based skeletal animation. The team exits before the closing brand card. `MosaicFlypastPreview` is a standalone 240-frame review composition. This is enabled only in `Christmas2026Teams`; the original film and its mosaic remain unchanged.
 
 Real employee footage will be integrated after the planned shoot. Current director tiles are the supplied staff photographs.

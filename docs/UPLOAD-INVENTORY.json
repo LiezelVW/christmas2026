@@ -1,10 +1,10 @@
 {
   "project": "DBFL Operation Christmas 2026",
-  "version": "Separate twelve-director Teams version with rigged Santa mosaic fly-past; Draft 1 unchanged",
+  "version": "Teams alternative with large rigged Santa fly-by revealing the mosaic; Draft 1 preserved",
   "file_count_excluding_this_inventory": 327,
   "asset_files": 279,
   "prepared_staff_portraits": 248,
-  "total_bytes": 62043011,
+  "total_bytes": 62044862,
   "largest_file": {
     "path": "public/assets/characters/santa-claus-rigged.glb",
     "bytes": 13527540,
@@ -42,8 +42,8 @@
     },
     {
       "path": "docs/TEAMS-VERSION.md",
-      "bytes": 1968,
-      "sha256": "70bd4099d0ed7d6aa677268ed6aaae142cb566fed378a91375b397bf82f6d56a"
+      "bytes": 2133,
+      "sha256": "b032f12139b9855900effb5291e53f0ed452753573176a2c3811559c5260d851"
     },
     {
       "path": "docs/TEXT-RENDERING.md",
@@ -1472,8 +1472,8 @@
     },
     {
       "path": "scripts/check-mosaic-flypast.mjs",
-      "bytes": 813,
-      "sha256": "9b9cdde67bcaa894bc670c4514f736a4d046c44582e96980d74ed1536d9444cf"
+      "bytes": 896,
+      "sha256": "aa78f7eb8c9ae6563ccffb8b209fbde6160fa2780c51287b7f369e61b7b95ddc"
     },
     {
       "path": "scripts/check-scene3-transition.mjs",
@@ -1587,8 +1587,8 @@
     },
     {
       "path": "src/Scene6Finale.tsx",
-      "bytes": 9232,
-      "sha256": "5684177a6e90bfffd4ace37384c28154f237b234d2a295d25ca5125b6498ccb7"
+      "bytes": 10835,
+      "sha256": "0914cbb3d25a7ca1a58240a3a4ed25fcbf2d507b68d1e667e766bb85c56ef578"
     },
     {
       "path": "src/Scenes.tsx",
