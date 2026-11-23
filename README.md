@@ -1,6 +1,6 @@
 # DBFL Operation Christmas 2026
 
-The latest approved Remotion film: **90 seconds, 1920 × 1080, 25 fps**. Includes all six scenes, the official DBFL logo, Montserrat typography, 248 prepared staff portraits and the approved animated North Pole runway takeoff.
+The latest approved Remotion film: **90 seconds, 1920 × 1080, 25 fps**. Includes all six scenes, the official DBFL logo, Montserrat typography, 198 approved unique portraits and the approved animated North Pole runway takeoff.
 
 ## Install and run
 
@@ -21,7 +21,7 @@ npm run verify:project
 npm run render
 ```
 
-`verify:project` checks the bundled GLBs and all 248 portrait paths, guards the approved takeoff slot, and renders checkpoints from all six scenes (including the takeoff in `Christmas2026`).
+`verify:project` checks the bundled GLBs and the 198 approved portrait paths and image hashes, guards the approved takeoff slot, and renders checkpoints from all six scenes (including the takeoff in `Christmas2026`).
 
 The full render is written under `out/`, which is ignored by git. The Remotion configuration enables ANGLE / WebGL 2 for the rigged 3D scenes. The CLI may download its standard Chromium headless browser on first render. All artwork, models, textures, fonts and decoder files are already included.
 
@@ -29,7 +29,7 @@ The full render is written under `out/`, which is ignored by git. The Remotion c
 
 | Scene | Film time | Content |
 | --- | --- | --- |
-| 1 | 00:00–00:10 | North Pole call, with workshop caller photo |
+| 1 | 00:00–00:10 | Santa’s Teams call with all twelve directors visible together |
 | 2 | 00:10–00:23 | Runway drainage: problem → solution → runway clear |
 | 3 | 00:23–00:36 | Structural assessment and reinforcement |
 | 4 | 00:36–00:49 | Animated 3D Santa and reindeer on the approved M50 route |
@@ -38,7 +38,7 @@ The full render is written under `out/`, which is ignored by git. The Remotion c
 
 The signed-off seven-second takeoff plays at **01:08–01:15**, immediately after the approval stamp. It uses one photographic background and a fixed camera. Reindeer limbs, Santa and reins are animated; this is not the older sliding PNG or five-second flight experiment.
 
-The latest text corrections are included: the runway subtitle is a single fixed, clipped layer, the staff-photo count label is removed, and the closing tagline is **Engineering Sustainable Futures.**
+There are no dialogue subtitles or narration paragraphs. Essential engineering warnings, labels and approval states remain. The closing tagline uses **Engineering** (Montserrat Bold), **Sustainable** (Medium) and **Futures.** (Regular), with normal spacing. The large rigged Santa fly-by reveals the mosaic.
 
 ## Source and assets
 
@@ -46,7 +46,7 @@ The latest text corrections are included: the runway subtitle is a single fixed,
 - `public/assets/characters/`: one shared copy of the Santa, reindeer and sleigh GLBs, with embedded textures and licence notices.
 - `public/basis/`: local KTX2 texture transcoder JavaScript and WebAssembly.
 - `public/assets/scene-2/` through `scene-6/`: approved cinematic plates and engineering artwork.
-- `public/assets/staff-mosaic/`: all 248 prepared staff photographs referenced by the film.
+- `public/assets/staff-mosaic/`: the prepared photo archive; exactly 198 approved portraits are selected by `src/staff-photos.json`. Unselected originals remain in the project.
 - `public/assets/branding/`, `caller/`, `fonts/`: official branding, caller image and Montserrat with its font licence.
 - `src/dublin-roads.json` and `public/assets/scene-4/dublin-network.svg`: road geometry used by the transport scene.
 - `docs/UPLOAD-INVENTORY.json`: file-size and SHA-256 inventory of the supplied production files.
@@ -58,3 +58,11 @@ Models are CC0 assets from [tevy](https://tevy.dev/models/reindeer) and [Grab3D]
 Dependencies, generated MP4s, render bundles/caches, operating-system files, temporary files and the old `flight-poc/` and `takeoff-preview/` projects are excluded. Unused raw staff originals (including the PSD) and the raw OpenStreetMap download are also excluded; the prepared portraits, processed geometry and map artwork needed to reproduce the film are included. No local originals were deleted.
 
 All included assets are below GitHub’s 100 MB individual-file limit, so this repository uses ordinary git without LFS. The current audio slots are unpopulated; the review film is silent.
+
+## Opening options and current selection
+
+`Christmas2026` and `Christmas2026Teams` both use the Teams group opening. All twelve directors are visible from the first connected-call frame; there is no John-only shot. `TeamsCallIntro` is the ten-second preview. `Christmas2026OriginalOpening` retains the earlier phone-opening option, and the untouched first draft remains at tag `draft-1-approved-2026-11-19`.
+
+The current source combines the latest approved animation branch (`d992409`) with the approved 198-portrait roster from `8731e7a`. No model, cinematic plate, official logo, takeoff motion or scene timing was replaced. See [update notes](docs/UPDATE-2026-11-23.md) and [roster audit](docs/ROSTER-AUDIT.json).
+
+`npm run render` produces a silent H.264 MP4; it deliberately omits the audio track. Shane’s final voiceover and music will be added in After Effects. No ElevenLabs recording is used. The planned green-screen and office footage can be integrated when supplied.

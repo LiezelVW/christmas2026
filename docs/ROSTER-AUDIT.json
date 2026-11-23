@@ -1,0 +1,335 @@
+{
+  "approvedCommit": "8731e7a11c35f0f5603edc4686f8e7f4858ece64",
+  "portraits": 198,
+  "uniqueNames": 198,
+  "uniquePaths": 198,
+  "uniqueFileSHA256": 198,
+  "nearDuplicateCandidates": [
+    {
+      "names": [
+        "Eamon O Regan",
+        "Grant Humphrey"
+      ],
+      "dHashDistance": 3
+    },
+    {
+      "names": [
+        "Glenn Tyler",
+        "Paul Cully"
+      ],
+      "dHashDistance": 3
+    }
+  ],
+  "excludedOldEntries": [
+    {
+      "src": "assets/staff-mosaic/staff-006.jpg",
+      "name": "Aine Sweeney (2)",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-011.jpg",
+      "name": "Anderson Costa",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-016.jpg",
+      "name": "Anne Morisson",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-019.jpg",
+      "name": "Aoife Mc Cormack",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-020.jpg",
+      "name": "Arethusa Goedert",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-030.jpg",
+      "name": "Carlo Sidoti (2)",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-045.jpg",
+      "name": "Conor Brady",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-048.jpg",
+      "name": "Conor O Loughlin",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-051.jpg",
+      "name": "Daniel Cowan",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-059.jpg",
+      "name": "Darren Richardson",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-065.jpg",
+      "name": "David Grant",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-070.jpg",
+      "name": "David Slattery Org",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-076.jpg",
+      "name": "Dylan Whelan",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-080.jpg",
+      "name": "Emma Galvin",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-082.jpg",
+      "name": "Enrique Marenco Jimenez",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-086.jpg",
+      "name": "Gabriel Brits",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-089.jpg",
+      "name": "Geraldo Souza",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-094.jpg",
+      "name": "Grace O Brien Teams",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-097.jpg",
+      "name": "Gra\u0301inne Grogan",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-105.jpg",
+      "name": "Jack Butler",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-106.jpg",
+      "name": "Jack Clarke",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-111.jpg",
+      "name": "James Bourke",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-113.jpg",
+      "name": "James O Hara",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-114.jpg",
+      "name": "James Redmond",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-119.jpg",
+      "name": "Javad Eslamzadeh",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-127.jpg",
+      "name": "John Kieran",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-131.jpg",
+      "name": "Kabelo Mokoka",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-143.jpg",
+      "name": "Laurence Endersen",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-144.jpg",
+      "name": "Lauren Lacey",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-146.jpg",
+      "name": "Liam Brehon",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-147.jpg",
+      "name": "Lidi Pan",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-149.jpg",
+      "name": "Linda Madlala",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-155.jpg",
+      "name": "Madeleine Cush",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-160.jpg",
+      "name": "Mark Caffrey",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-162.jpg",
+      "name": "Mark Mc Kenna",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-163.jpg",
+      "name": "Mark O Mahony",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-170.jpg",
+      "name": "Mattias Juha\u0301sz Teams",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-174.jpg",
+      "name": "Michael Drennan",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-185.jpg",
+      "name": "Nkumbi Nganduna",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-188.jpg",
+      "name": "Noelia Rodriguez",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-204.jpg",
+      "name": "Robert O Rourke (2)",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-206.jpg",
+      "name": "Rob Kelly Org",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-214.jpg",
+      "name": "Ryan Keenan",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-215.jpg",
+      "name": "Ryan Parkes",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-218.jpg",
+      "name": "Sayed Saeed",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-220.jpg",
+      "name": "Sean Quinn",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-230.jpg",
+      "name": "Sudhir Kothandapani",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-238.jpg",
+      "name": "Tiarnan Hegarty",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-244.jpg",
+      "name": "Vincenzo Koopman",
+      "office": "",
+      "position": "50% 30%"
+    },
+    {
+      "src": "assets/staff-mosaic/staff-247.jpg",
+      "name": "Vuk Galavic",
+      "office": "",
+      "position": "50% 30%"
+    }
+  ],
+  "pending": [
+    "Cillin McDermott",
+    "Sangeeth Umayanga",
+    "Victor Lobo",
+    "Yasheel Abeeluck",
+    "Christo Crous \u2014 awaiting his supplied black-and-white file in project",
+    "Confirmation of the 196th employee"
+  ],
+  "doNotInclude": "Dora Belosevic \u2014 no approved photograph",
+  "nearDuplicateReview": "Both low-distance pairs were visually compared; these are different photographs, not duplicates. No approved entry was removed."
+}

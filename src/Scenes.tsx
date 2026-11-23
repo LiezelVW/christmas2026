@@ -1,4 +1,4 @@
-import { ScriptSidebar } from "./ScriptSidebar";
+import { EngineeringStatus } from "./EngineeringStatus";
 import React from "react";
 import { Img, staticFile, useCurrentFrame } from "remotion";
 import {
@@ -142,7 +142,7 @@ export const Scene1 = () => {
           </div>
         </div>
       )}
-      <ScriptSidebar scene={0} />
+      <EngineeringStatus scene={0} />
     </>
   );
 };

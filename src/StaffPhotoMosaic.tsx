@@ -21,12 +21,18 @@ export const StaffPhotoMosaic = ({
   const data: (StaffPhoto | null)[] = people.length
     ? people
     : Array.from({ length: 200 }, () => null);
-  const columns = people.length > 220 ? 28 : 20;
+  const columns = people.length === 198 ? 22 : people.length > 220 ? 28 : 20;
   const units = data.reduce((n, p) => n + (p?.kind === "group" ? 4 : 1), 0);
   const rows =
     Math.ceil(units / columns) +
     (people.some((p) => p.kind === "group") ? 2 : 0);
-  const cell = Math.max(6, Math.min(53, (590 - (rows - 1) * 7) / rows));
+  const cell = Math.max(
+    6,
+    Math.min(
+      (1720 - (columns - 1) * 7) / columns,
+      (590 - (rows - 1) * 7) / rows,
+    ),
+  );
   return (
     <div
       style={{
@@ -35,7 +41,8 @@ export const StaffPhotoMosaic = ({
         right: 100,
         top: 290,
         display: "grid",
-        gridTemplateColumns: `repeat(${columns},minmax(0,1fr))`,
+        gridTemplateColumns: `repeat(${columns},${cell}px)`,
+        justifyContent: "center",
         gridAutoRows: cell,
         gap: 7,
         gridAutoFlow: "dense",
@@ -49,6 +56,7 @@ export const StaffPhotoMosaic = ({
         );
         return (
           <div
+            data-portrait-name={person?.name}
             key={person?.src ?? i}
             style={{
               position: "relative",

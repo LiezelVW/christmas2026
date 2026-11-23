@@ -1,4 +1,4 @@
-import { ScriptSidebar } from "./ScriptSidebar";
+import { EngineeringStatus } from "./EngineeringStatus";
 import React from "react";
 import { useCurrentFrame, Img, staticFile } from "remotion";
 import { AnimatedChristmasTeam } from "./AnimatedChristmasTeam";
@@ -81,7 +81,7 @@ export const Scene4Analysis = () => {
   };
   return (
     <>
-      <ScriptSidebar scene={3} />
+      <EngineeringStatus scene={3} />
       <div
         style={{
           position: "absolute",

@@ -1,4 +1,4 @@
-import { ScriptSidebar } from "./ScriptSidebar";
+import { EngineeringStatus } from "./EngineeringStatus";
 import React from "react";
 import {
   AbsoluteFill,
@@ -276,7 +276,7 @@ export const Scene3Analysis = () => {
           </div>
         </div>
       </div>
-      <ScriptSidebar scene={2} />
+      <EngineeringStatus scene={2} />
       <div
         style={{
           position: "absolute",

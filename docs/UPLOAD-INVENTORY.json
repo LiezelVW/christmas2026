@@ -1,10 +1,10 @@
 {
   "project": "DBFL Operation Christmas 2026",
-  "version": "stable structural HTML callouts and compact Montserrat closing tagline; no voiceover or bottom subtitles",
-  "file_count_excluding_this_inventory": 322,
+  "version": "Latest approved animations d992409 plus approved 198-portrait roster 8731e7a; all-director Teams main, silent 90-second review",
+  "file_count_excluding_this_inventory": 332,
   "asset_files": 279,
-  "prepared_staff_portraits": 248,
-  "total_bytes": 62022457,
+  "prepared_staff_portraits": 198,
+  "total_bytes": 64077039,
   "largest_file": {
     "path": "public/assets/characters/santa-claus-rigged.glb",
     "bytes": 13527540,
@@ -37,8 +37,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 4287,
-      "sha256": "adb9a6e804ae54a0a403f45bc63ea7c53a05ccbced45fac9500f9384a6597f71"
+      "bytes": 5509,
+      "sha256": "075b1e8fe146c11c6cb71c39a6af689cac57a9e4ce355d5e97d860fa092160bd"
+    },
+    {
+      "path": "docs/ROSTER-AUDIT.json",
+      "bytes": 8059,
+      "sha256": "88785a386b5c51a787219156fb6ceae6da94947bf2e283397d0579d2c94efce2"
+    },
+    {
+      "path": "docs/TEAMS-VERSION.md",
+      "bytes": 1508,
+      "sha256": "acca19716902f7c4f1fb74fd4b102bedf01d11ab1b8e3ef65fbd58aa0f5d6ca3"
     },
     {
       "path": "docs/TEXT-RENDERING.md",
@@ -46,14 +56,29 @@
       "sha256": "2ad3cffd2c3a4702217623a2e92397f37413aa870e44b43d6c13caeb69deb9c8"
     },
     {
+      "path": "docs/UPDATE-2026-11-23.md",
+      "bytes": 2962,
+      "sha256": "e1ae9eaaf8aaed6aa7755c83509a09b6919862c663c5f263ec0cab02d7a88ba2"
+    },
+    {
       "path": "docs/VALIDATION.md",
-      "bytes": 1429,
-      "sha256": "872126744ae13b1821a0995a137ced9bb757ac03c79ee010d5c8d3829dd7b82d"
+      "bytes": 1789,
+      "sha256": "80e688061b8ec58e3bb5d26383369026ce6d8391289da6915ddb3468400609ed"
     },
     {
       "path": "docs/VOICEOVER.md",
       "bytes": 592,
       "sha256": "54d02eec621a0b69c70cfc7774f331106099b9884c2b41a630150fc3d0e962fb"
+    },
+    {
+      "path": "docs/approved-roster-8731e7a.json",
+      "bytes": 25923,
+      "sha256": "9fa3682738f3452c722e55000754462d95fd9d07c3e90f67ca795131b3568d04"
+    },
+    {
+      "path": "docs/review/mosaic-198-rendered.png",
+      "bytes": 2000374,
+      "sha256": "0540bc8590f14bd95c829ec965c083cf61a77e9d931f42f07460d46504a0b51e"
     },
     {
       "path": "package-lock.json",
@@ -62,8 +87,8 @@
     },
     {
       "path": "package.json",
-      "bytes": 1806,
-      "sha256": "ea1599a69e98b2dab870cf63a5645cb2115d8fb3127a1e678b4051b30bdc1a39"
+      "bytes": 2156,
+      "sha256": "b03e1ae5cd75424425bab8218bc85e2c3475af37ae95b3ec222fadf563cbe6f0"
     },
     {
       "path": "public/assets/branding/dbfl-logo.svg",
@@ -1466,6 +1491,11 @@
       "sha256": "fa64e8cea421bb6d4222a742330c3e3c2b47f856ecf49e9508282f52a791b5a9"
     },
     {
+      "path": "scripts/check-mosaic-flypast.mjs",
+      "bytes": 911,
+      "sha256": "945687b4eb2f6593fd4f892dcc16f59559136134c27e1b05524cf07dcf56e132"
+    },
+    {
       "path": "scripts/check-scene3-transition.mjs",
       "bytes": 1010,
       "sha256": "9795a00afc10f6e9948aaa571f83476ea066912261d68b7903c1c441d8ea28eb"
@@ -1474,6 +1504,11 @@
       "path": "scripts/check-structural-labels.mjs",
       "bytes": 805,
       "sha256": "4e00a038ce744e2cae4a975dd07ef663cdb2b4debcf1062bdc85360a38525b54"
+    },
+    {
+      "path": "scripts/check-teams-call.mjs",
+      "bytes": 825,
+      "sha256": "622ad40917c2e049d45437562e819fc0f71ecdd234367a75a04aea1ef832734c"
     },
     {
       "path": "scripts/check-text-stability.mjs",
@@ -1512,8 +1547,8 @@
     },
     {
       "path": "scripts/verify-upload-build.mjs",
-      "bytes": 2217,
-      "sha256": "62dc0ccd8686a16f5c07c5168eae05b9f60edd3da71b38e121f15be08f040b26"
+      "bytes": 3669,
+      "sha256": "cb6cd8c91565ed07866adea50f0df0027e7aee497a1dad0b350f88d0a1451500"
     },
     {
       "path": "scripts/verify.mjs",
@@ -1546,49 +1581,59 @@
       "sha256": "55009558b145f4afee70c5d4369a2801b97e160f204ffda92b7631cc54a37629"
     },
     {
+      "path": "src/EngineeringStatus.tsx",
+      "bytes": 1705,
+      "sha256": "238dfabab9fce875ba3fe5423a57e7ea1aa1cc610b2dbc8a13154c2ba23f2f24"
+    },
+    {
       "path": "src/Root.tsx",
-      "bytes": 4213,
-      "sha256": "9ed45bff3e014952f16d373734c021f4b1af2798fdd5160c66c6dd40b29efb5a"
+      "bytes": 5507,
+      "sha256": "2b7116c1f3c2962352f5488dcd246e0135d0465f7e5b030c1fd6e165f259f3f4"
     },
     {
       "path": "src/Scene2Benchmark.tsx",
-      "bytes": 7997,
-      "sha256": "014dafbe2bce0e5422e93dc4e1e577a7af015c9a44ff4c831fd775868d0e2fc2"
+      "bytes": 8009,
+      "sha256": "27be51cbe359e9a56a4e1ada5d06c99741aa2233c01183ab2f5d01a55b5e1e82"
     },
     {
       "path": "src/Scene3Structural.tsx",
-      "bytes": 9018,
-      "sha256": "1ed218fd28e34fa337cd314e6434c057058c85ddaec98e5e85cdfed1de32f459"
+      "bytes": 9030,
+      "sha256": "c8289be6e7540f6e0e5c25087714c0d11be122d9447103cc272cb0c248ceca1d"
     },
     {
       "path": "src/Scene4Transport.tsx",
-      "bytes": 8705,
-      "sha256": "26fe7b080a2ba510205cfce55bdc00056c7c9ae8161eca93d0055d2eea18e4ec"
+      "bytes": 8717,
+      "sha256": "b730adbefcbce683bbb917ceb4fd4d792fd95699bda7b0967b094db43bb41910"
     },
     {
       "path": "src/Scene5Sustainability.tsx",
-      "bytes": 3075,
-      "sha256": "1636c4a77e09f98ae4ded2a154a28186b78d48aef2e8fd71fa438e93cabe5e28"
+      "bytes": 3087,
+      "sha256": "21203f3d398b283445212690a34fa9f1051acde0fcf199b9ff7ef9a09af1c914"
     },
     {
       "path": "src/Scene6Finale.tsx",
-      "bytes": 8686,
-      "sha256": "6b6b06da96c3f7a1c8f4f7456173b616e728dae74b370543f48656e66def4349"
+      "bytes": 10847,
+      "sha256": "0d851ab5ee95a9ddc2cbc4e997dbd3a0a12e373bb17e4309977423e5fe6478c6"
     },
     {
       "path": "src/Scenes.tsx",
-      "bytes": 4709,
-      "sha256": "3429d42d2b77efdb968c5df8626062e5bdb2058bccab2071824fa3f2ec68788a"
+      "bytes": 4721,
+      "sha256": "0d5ffa9ab14992c3ceb3cf1556257d8ad93307e6790a0aa85d2e0a0d55e24bc9"
     },
     {
       "path": "src/ScriptSidebar.tsx",
-      "bytes": 2017,
-      "sha256": "0d6c102f57cfdf8b070c6fbc3014e1ba2f8a6c8b09b3061d7c2f91412bf7593b"
+      "bytes": 145,
+      "sha256": "44ce86a742495bb42499da8d474fc90c431462856307e968c65db10ead0a48ae"
     },
     {
       "path": "src/StaffPhotoMosaic.tsx",
-      "bytes": 3398,
-      "sha256": "d06ddc4bab97f0f1781b3cd6b994991e3f6dca3823627f5c03c02c1aebbe3645"
+      "bytes": 3569,
+      "sha256": "ddb26c397cceeb08c6eedc856cec74c9ec5159fadb75e8c8d6c35abd6e5338e2"
+    },
+    {
+      "path": "src/TeamsCallIntro.tsx",
+      "bytes": 12294,
+      "sha256": "5b884652734ae2e521c8ea7332e03db15454e56d0b5beb73ae2379a0ba0649bf"
     },
     {
       "path": "src/components.tsx",
@@ -1599,6 +1644,11 @@
       "path": "src/config.ts",
       "bytes": 4003,
       "sha256": "30ac20185df38f31a1e68e1575803315b8164dd9fa827ec4639e906a91d54a5d"
+    },
+    {
+      "path": "src/directors.json",
+      "bytes": 1338,
+      "sha256": "dc19f2c745bfafb71a2bf1efc31e0e5a1931779a781a9768b8aac7a789015128"
     },
     {
       "path": "src/dublin-roads.json",
@@ -1617,8 +1667,8 @@
     },
     {
       "path": "src/staff-photos.json",
-      "bytes": 32438,
-      "sha256": "cafa6069e20fcdeaee921e98c6d204a55015f76ae5f7982270dadd7c4f73fba4"
+      "bytes": 25923,
+      "sha256": "9fa3682738f3452c722e55000754462d95fd9d07c3e90f67ca795131b3568d04"
     },
     {
       "path": "src/style.css",

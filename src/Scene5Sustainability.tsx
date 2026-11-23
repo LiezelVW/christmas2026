@@ -1,4 +1,4 @@
-import { ScriptSidebar } from "./ScriptSidebar";
+import { EngineeringStatus } from "./EngineeringStatus";
 import React from "react";
 import { Img, staticFile, useCurrentFrame } from "remotion";
 import { CinematicPlate, Status, SmallLabel, progress } from "./CampaignDesign";
@@ -46,7 +46,7 @@ export const Scene5Analysis = () => {
   const annotations = progress(f, 100, 130) * (1 - progress(f, 250, 270));
   return (
     <>
-      <ScriptSidebar scene={4} />
+      <EngineeringStatus scene={4} />
       <AnimatedChristmasTeam
         mode="standing"
         width={1010}

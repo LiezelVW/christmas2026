@@ -1,15 +1,15 @@
-# Upload validation — 19 November 2026
+# Validation 23 November 2026
 
-Validated in a clean checkout with Node 22.22.1 / npm 10.9.4:
+Validated from the project directory with Node 22.22.1 and npm 10.9.4.
 
 - `npm ci --no-audit --no-fund`: passed against the committed lockfile.
-- `npm run check`: passed with no TypeScript diagnostics.
-- `npm run dev -- --force-new --no-open`: Studio started and compiled successfully.
-- Complete Remotion bundle and eight rendered checkpoints passed: caller image, stable civil caption, structural scene, animated map team, standing Santa/reindeer, approved takeoff inside Christmas2026, staff mosaic and closing frame.
-- `npm run render`: complete 2250-frame H.264 export succeeded: 90 seconds, 1920×1080, 25 fps.
-- The takeoff component is mounted at Scene 6 frames 150–324, exactly the approved 175-frame sequence, followed by the staff mosaic and closing message. An omitted mounting element detected during the upload audit was restored without changing the approved animation or timing.
-- The latest text fixes are present: one fixed civil subtitle layer, no staff-count label, and Engineering Sustainable Futures.
-- All 248 prepared portrait paths resolve; all three GLBs contain geometry, with skeletal skins and animation clips verified for Santa and the reindeer.
-- No included individual file reaches 100 MB. Git LFS is not required.
+- `npm run check`: passed, with no TypeScript diagnostics.
+- `npm run verify:project`: passed all ten image checkpoints, including both connected-call states, all engineering scenes, the approved takeoff inside the main composition, the 198-portrait mosaic and closing typography.
+- The roster exactly matches commit `8731e7a`: 198 unique names, paths and SHA-256 image hashes. Two perceptual-hash candidates were visually checked and are different photographs. No asset was deleted.
+- All twelve director portrait paths resolve, and every connected-call frame uses the complete gallery. The John-only display branch is removed.
+- The fixed-background takeoff slot remains Scene 6 frames 150–324. All models, plates, font, logo and takeoff animation source match `d992409`.
+- `npm run render`: successfully completed the full H.264 export. FFprobe confirms 1920 × 1080, 25/1 fps, 2250 video frames, 90.000000 seconds and zero audio streams.
+- The mosaic screenshot is extracted from the completed MP4 at 82 seconds, not a mockup or standalone composition image: [rendered mosaic](review/mosaic-198-rendered.png).
+- Essential engineering labels and status graphics remain; narration paragraphs, dialogue subtitles, music and voiceover are omitted. The final Montserrat tagline retains weights 700 / 500 / 400 with normal spacing.
 
-Generated MP4s, checkpoint PNGs and render bundles remain local and are excluded from git. No local source files or original assets were deleted.
+The MP4 is saved on Desktop as `DBFL Operation Christmas 2026 - Approved 198 Portraits - 23 Nov 2026.mp4`, verified in Finder. The original source snapshot, complete render log and export metadata are retained locally. Earlier drafts and all original photographs remain preserved.
