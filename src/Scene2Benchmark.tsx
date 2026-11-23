@@ -184,51 +184,37 @@ export const Scene2Analysis = () => {
                 stroke="#F15A29"
                 strokeWidth="2"
               />
-              <rect
-                x="1132"
-                y="604"
-                width="340"
-                height="65"
-                rx="3"
-                fill="#14252DEB"
-              />
-              <text
-                x="1148"
-                y="630"
-                fontSize="19"
-                fill="white"
-                letterSpacing="2"
-              >
-                COLLECTION CHANNEL
-              </text>
-              <text x="1148" y="653" fontSize="15" fill="#BDD2DD">
-                Surface falls → grated drain
-              </text>
             </g>
           </svg>
+          <Img
+            data-label="collection-channel"
+            alt="Collection channel: surface falls to grated drain"
+            src={staticFile("assets/annotations/collection-channel.svg")}
+            style={{
+              position: "absolute",
+              left: 1132,
+              top: 604,
+              width: 340,
+              height: 72,
+              opacity: ease(f, 100, 130) * clean,
+            }}
+          />
         </div>
       </div>
       <EngineeringStatus scene={1} />
-      <div
+      <Img
+        data-label="drainage-outlet"
+        alt="Drainage outlet: water conveyed to outfall"
+        src={staticFile("assets/annotations/drainage-outlet.svg")}
         style={{
           position: "absolute",
           right: 105,
           top: 747,
           width: 300,
-          padding: "14px 18px",
-          borderTop: `2px solid ${solved ? brand.green : brand.orange}`,
-          background: "#14252DEC",
+          height: 78,
           opacity: ease(f, 145, 170) * clean,
-          color: "#EDF3F5",
         }}
-      >
-        <div style={{ fontSize: 18, letterSpacing: 1.5 }}>DRAINAGE OUTLET</div>
-        <div style={{ fontSize: 15, color: "#B8CFDA", marginTop: 8 }}>
-          {solved
-            ? "Flow discharged · surface clear"
-            : "Water conveyed to outfall"}
-        </div>
-      </div>
+      />
       <div
         style={{
           position: "absolute",

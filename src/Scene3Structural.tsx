@@ -218,62 +218,32 @@ export const Scene3Analysis = () => {
               ))}
             </g>
           </svg>
-          <div
-            data-engineering-label="primary-beam"
+          <Img
+            data-label="primary-beam"
+            alt="Primary storage beam: present load to beam to columns"
+            src={staticFile("assets/annotations/primary-storage-beam.svg")}
             style={{
               position: "absolute",
               left: 1245,
               top: 615,
               width: 390,
-              padding: "14px 20px",
-              background: "#14252D",
-              borderRadius: 3,
-              overflow: "hidden",
+              height: 78,
               opacity: ease(f, 95, 120) * (1 - ease(f, 168, 185)),
             }}
-          >
-            <div
-              style={{
-                fontSize: 20,
-                letterSpacing: 2,
-                color: "white",
-                whiteSpace: "nowrap",
-              }}
-            >
-              PRIMARY STORAGE BEAM
-            </div>
-            <div style={{ fontSize: 16, color: "#C3D8DF", marginTop: 8 }}>
-              Present load → beam → columns
-            </div>
-          </div>
-          <div
-            data-engineering-label="additional-supports"
+          />
+          <Img
+            data-label="additional-supports"
+            alt="Additional supports: redistributed load path"
+            src={staticFile("assets/annotations/additional-supports.svg")}
             style={{
               position: "absolute",
               left: 1200,
               top: 715,
               width: 360,
-              padding: "14px 20px",
-              background: "#14252D",
-              borderRadius: 3,
-              overflow: "hidden",
-              opacity: reinforce,
+              height: 78,
+              opacity: ease(f, 170, 185),
             }}
-          >
-            <div
-              style={{
-                fontSize: 20,
-                letterSpacing: 2,
-                color: "white",
-                whiteSpace: "nowrap",
-              }}
-            >
-              ADDITIONAL SUPPORTS
-            </div>
-            <div style={{ fontSize: 16, color: "#C3D8DF", marginTop: 8 }}>
-              Redistributed load path
-            </div>
-          </div>
+          />
         </div>
       </div>
       <EngineeringStatus scene={2} />

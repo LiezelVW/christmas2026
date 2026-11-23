@@ -13,3 +13,7 @@ Validated from the project directory with Node 22.22.1 and npm 10.9.4.
 - Essential engineering labels and status graphics remain; narration paragraphs, dialogue subtitles, music and voiceover are omitted. The final Montserrat tagline retains weights 700 / 500 / 400 with normal spacing.
 
 The MP4 is saved on Desktop as `DBFL Operation Christmas 2026 - Approved 198 Portraits - 23 Nov 2026.mp4`, verified in Finder. The original source snapshot, complete render log and export metadata are retained locally. Earlier drafts and all original photographs remain preserved.
+
+## Follow-up label and parked-team correction
+
+The follow-up export and encoded-frame checks are documented in [labels and sustainability](LABELS-AND-SUSTAINABILITY.md). Final video remains 90 seconds, 2250 frames, 1920 × 1080, 25 fps and silent. The new Desktop file is `DBFL Operation Christmas 2026 - Fixed Labels and Full Sleigh Team.mp4`; the earlier export remains preserved.

@@ -1,10 +1,10 @@
 {
   "project": "DBFL Operation Christmas 2026",
-  "version": "Latest approved animations d992409 plus approved 198-portrait roster 8731e7a; all-director Teams main, silent 90-second review",
-  "file_count_excluding_this_inventory": 332,
-  "asset_files": 279,
+  "version": "Outlined single-image labels; complete parked sleigh and four-reindeer sustainability team; 198 approved portraits",
+  "file_count_excluding_this_inventory": 345,
+  "asset_files": 287,
   "prepared_staff_portraits": 198,
-  "total_bytes": 64077039,
+  "total_bytes": 66899682,
   "largest_file": {
     "path": "public/assets/characters/santa-claus-rigged.glb",
     "bytes": 13527540,
@@ -37,8 +37,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 5509,
-      "sha256": "075b1e8fe146c11c6cb71c39a6af689cac57a9e4ce355d5e97d860fa092160bd"
+      "bytes": 5962,
+      "sha256": "d9d7793be08eca036797a00e963e44adbd07a69edd5d6c635155e80c6b9e0616"
+    },
+    {
+      "path": "docs/LABELS-AND-SUSTAINABILITY.md",
+      "bytes": 2899,
+      "sha256": "d7d4a74fb751b04da91906da6b580c01a3f05b8d09d40344ff451e8324fb0ff8"
     },
     {
       "path": "docs/ROSTER-AUDIT.json",
@@ -62,8 +67,8 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "bytes": 1789,
-      "sha256": "80e688061b8ec58e3bb5d26383369026ce6d8391289da6915ddb3468400609ed"
+      "bytes": 2173,
+      "sha256": "07e95bab386ce627d4a23246f10c6b46793f23f68459c0af7d285672422df16f"
     },
     {
       "path": "docs/VOICEOVER.md",
@@ -76,19 +81,69 @@
       "sha256": "9fa3682738f3452c722e55000754462d95fd9d07c3e90f67ca795131b3568d04"
     },
     {
+      "path": "docs/review/encoded-label-stability.json",
+      "bytes": 708,
+      "sha256": "55cb1844de439e83c144500efa095ed770f495f395c240fd9dc33751406c1f09"
+    },
+    {
       "path": "docs/review/mosaic-198-rendered.png",
       "bytes": 2000374,
       "sha256": "0540bc8590f14bd95c829ec965c083cf61a77e9d931f42f07460d46504a0b51e"
     },
     {
+      "path": "docs/review/sustainability-full-team.png",
+      "bytes": 2697950,
+      "sha256": "66d4b590333a43f35ea00c452acf3e783a3747be428d09b3192b2eee227d9ab6"
+    },
+    {
       "path": "package-lock.json",
-      "bytes": 118813,
-      "sha256": "703cb2ddb2a2c283726134269e14ffaf6b84caebe5232997f7eeb14337a80db8"
+      "bytes": 121146,
+      "sha256": "63386d05490e396cd1c6dfd1d7f1c469a1d4ebe8d4bd1825a1b1b0a0f52b85e8"
     },
     {
       "path": "package.json",
-      "bytes": 2156,
-      "sha256": "b03e1ae5cd75424425bab8218bc85e2c3475af37ae95b3ec222fadf563cbe6f0"
+      "bytes": 2246,
+      "sha256": "30c40aaf46355a5ead008bec09340d5cbce7f9b7965d45bfa5924c8b2dea6fb1"
+    },
+    {
+      "path": "public/assets/annotations/additional-supports.svg",
+      "bytes": 15075,
+      "sha256": "9344444cc1872bcd876e0826e52010b2e8ee872fb77b606c6ef6932827c92249"
+    },
+    {
+      "path": "public/assets/annotations/collection-channel.svg",
+      "bytes": 15068,
+      "sha256": "d6211fcf8fa34b74084e1cc8175e7f04efbbe86d8b74e00fd32237f28abf673f"
+    },
+    {
+      "path": "public/assets/annotations/drainage-outlet.svg",
+      "bytes": 12267,
+      "sha256": "434b7ad8e803be90fb4c538422fdb72d53f90eb979292030e39b68a16a946d2f"
+    },
+    {
+      "path": "public/assets/annotations/primary-storage-beam.svg",
+      "bytes": 16300,
+      "sha256": "2fedd07ac40cf75b1394f3839b250044d8b9e118f789f466dd2f06a6cae09ad6"
+    },
+    {
+      "path": "public/assets/annotations/reindeer-delivery.svg",
+      "bytes": 15582,
+      "sha256": "7e0080b1e66858202d9c0374c465d0bc3d22de979e94d94d30abf26ba8689345"
+    },
+    {
+      "path": "public/assets/annotations/solar-pv.svg",
+      "bytes": 16661,
+      "sha256": "edd296f69bf6694ba3355fb9586287974921b571e2aa2544ed3356667bc177e4"
+    },
+    {
+      "path": "public/assets/annotations/transport-map-labels.svg",
+      "bytes": 18779,
+      "sha256": "d91f978cb747634960c517f3a27e32d66912214b3f992f12c862df26966d753a"
+    },
+    {
+      "path": "public/assets/annotations/wind-generation.svg",
+      "bytes": 3813,
+      "sha256": "7ac61deada6ae4eada47894e003e55864641643030ebca9e57f9afc4dda04f33"
     },
     {
       "path": "public/assets/branding/dbfl-logo.svg",
@@ -1491,6 +1546,16 @@
       "sha256": "fa64e8cea421bb6d4222a742330c3e3c2b47f856ecf49e9508282f52a791b5a9"
     },
     {
+      "path": "scripts/build-engineering-labels.mjs",
+      "bytes": 2788,
+      "sha256": "631967fb3ba5b943805ea8072478aa7e63ec45e0772a15575bcb499dd25cd5af"
+    },
+    {
+      "path": "scripts/check-labels-and-parked-team.mjs",
+      "bytes": 1279,
+      "sha256": "44e53d8b7d22438993d078407b145545187e751e55b7142ef766450b5c332604"
+    },
+    {
       "path": "scripts/check-mosaic-flypast.mjs",
       "bytes": 911,
       "sha256": "945687b4eb2f6593fd4f892dcc16f59559136134c27e1b05524cf07dcf56e132"
@@ -1557,8 +1622,8 @@
     },
     {
       "path": "src/AnimatedChristmasTeam.tsx",
-      "bytes": 15346,
-      "sha256": "541fbed1039404d3cdb6860ed1aad5f51b4adb23156ae77285c083b265f7f36c"
+      "bytes": 16512,
+      "sha256": "bcea25e4037326293c310daf0a6edaeb5a4c629ad2b209f00578068fca314dcb"
     },
     {
       "path": "src/ApprovedRunwayTakeoff.tsx",
@@ -1592,23 +1657,23 @@
     },
     {
       "path": "src/Scene2Benchmark.tsx",
-      "bytes": 8009,
-      "sha256": "27be51cbe359e9a56a4e1ada5d06c99741aa2233c01183ab2f5d01a55b5e1e82"
+      "bytes": 7605,
+      "sha256": "07210b440934de7452993925fdf288053ec41b1f06b9327155a0a73c011b93e2"
     },
     {
       "path": "src/Scene3Structural.tsx",
-      "bytes": 9030,
-      "sha256": "c8289be6e7540f6e0e5c25087714c0d11be122d9447103cc272cb0c248ceca1d"
+      "bytes": 8253,
+      "sha256": "867d33fcbcefefe0623834e3812fc6f9afa7b248d9313b90aefe6268dc92eeea"
     },
     {
       "path": "src/Scene4Transport.tsx",
-      "bytes": 8717,
-      "sha256": "b730adbefcbce683bbb917ceb4fd4d792fd95699bda7b0967b094db43bb41910"
+      "bytes": 8536,
+      "sha256": "8a029a38b029e81ae9c59a2bc3f5433b3e03a9a84f3e363afa29d3bb2c1c8ab5"
     },
     {
       "path": "src/Scene5Sustainability.tsx",
-      "bytes": 3087,
-      "sha256": "21203f3d398b283445212690a34fa9f1051acde0fcf199b9ff7ef9a09af1c914"
+      "bytes": 3497,
+      "sha256": "ffee194fba2404119398a42062de9a578f1cd6936fe408db4da8b528110f59ec"
     },
     {
       "path": "src/Scene6Finale.tsx",

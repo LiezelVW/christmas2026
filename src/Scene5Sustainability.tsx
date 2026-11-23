@@ -47,11 +47,24 @@ export const Scene5Analysis = () => {
   return (
     <>
       <EngineeringStatus scene={4} />
+      <Img
+        data-label="reindeer-delivery"
+        alt="Reindeer-powered delivery; wind and solar for the workshop"
+        src={staticFile("assets/annotations/reindeer-delivery.svg")}
+        style={{
+          position: "absolute",
+          left: 100,
+          top: 520,
+          width: 565,
+          height: 84,
+          opacity: reveal,
+        }}
+      />
       <AnimatedChristmasTeam
-        mode="standing"
-        width={1010}
-        height={440}
-        style={{ left: 825, top: 460, opacity: reveal }}
+        mode="parked"
+        width={1220}
+        height={520}
+        style={{ left: 650, top: 420, opacity: reveal }}
       />
       <svg
         width="1920"
@@ -69,31 +82,39 @@ export const Scene5Analysis = () => {
           stroke={brand.orange}
           strokeWidth="2"
         />
-        <rect x="1255" y="270" width="315" height="62" fill="#14252DEB" />
-        <text x="1272" y="296" fontSize="18" letterSpacing="2" fill="white">
-          INTEGRATED SOLAR PV
-        </text>
-        <text x="1272" y="320" fontSize="14" fill="#B8D0DC">
-          Renewable generation / concept
-        </text>
         <path
           d="M875 260L990 190H1195"
           fill="none"
           stroke={brand.orange}
           strokeWidth="2"
         />
-        <text x="1000" y="178" fontSize="17" fill="#DBE8EF" letterSpacing="2">
-          WIND GENERATION
-        </text>
-        <path
-          d="M1020 825Q1330 800 1680 820"
-          stroke="#91B99E"
-          strokeWidth="2"
-          strokeDasharray="5 10"
-          strokeDashoffset={-f}
-          fill="none"
-        />
       </svg>
+      <Img
+        data-label="solar-pv"
+        alt="Integrated solar PV: renewable generation concept"
+        src={staticFile("assets/annotations/solar-pv.svg")}
+        style={{
+          position: "absolute",
+          left: 1255,
+          top: 270,
+          width: 340,
+          height: 72,
+          opacity: annotations,
+        }}
+      />
+      <Img
+        data-label="wind-generation"
+        alt="Wind generation"
+        src={staticFile("assets/annotations/wind-generation.svg")}
+        style={{
+          position: "absolute",
+          left: 990,
+          top: 150,
+          width: 260,
+          height: 48,
+          opacity: annotations,
+        }}
+      />
 
       <div
         style={{

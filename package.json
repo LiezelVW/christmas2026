@@ -17,22 +17,24 @@
     "render:scene6": "remotion render src/index.ts Scene6 out/scene-6.mp4 --codec=h264 --crf=18 --concurrency=2",
     "verify:project": "node scripts/verify-upload-build.mjs",
     "render:teams": "remotion render src/index.ts Christmas2026Teams out/dbfl-christmas-2026-teams.mp4 --codec=h264 --crf=18 --concurrency=4 --muted",
-    "render:original-opening": "remotion render src/index.ts Christmas2026OriginalOpening out/dbfl-christmas-2026-original-opening.mp4 --codec=h264 --crf=18 --concurrency=4 --muted"
+    "render:original-opening": "remotion render src/index.ts Christmas2026OriginalOpening out/dbfl-christmas-2026-original-opening.mp4 --codec=h264 --crf=18 --concurrency=4 --muted",
+    "build:labels": "node scripts/build-engineering-labels.mjs"
   },
   "dependencies": {
+    "@react-three/fiber": "9.4.0",
     "@remotion/cli": "4.0.484",
+    "@remotion/three": "4.0.484",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "remotion": "4.0.484",
-    "@remotion/three": "4.0.484",
-    "@react-three/fiber": "9.4.0",
     "three": "0.181.2"
   },
   "devDependencies": {
     "@types/react": "19.1.0",
     "@types/react-dom": "19.1.0",
+    "@types/three": "0.181.0",
+    "fontkit": "^3.0.0",
     "prettier": "^3.10.1",
-    "typescript": "5.9.3",
-    "@types/three": "0.181.0"
+    "typescript": "5.9.3"
   }
 }

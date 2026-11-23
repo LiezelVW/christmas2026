@@ -1,0 +1,53 @@
+{
+  "civil": {
+    "encodedFrames": [
+      "civil-175",
+      "civil-180",
+      "civil-220"
+    ],
+    "glyphBounds": [
+      [
+        9,
+        8,
+        326,
+        56
+      ],
+      [
+        9,
+        8,
+        326,
+        56
+      ],
+      [
+        9,
+        8,
+        326,
+        56
+      ]
+    ],
+    "minimumMaskOverlap": 1.0,
+    "maxAllowedBoundShiftPixels": 1
+  },
+  "supports": {
+    "encodedFrames": [
+      "supports-270",
+      "supports-280"
+    ],
+    "glyphBounds": [
+      [
+        14,
+        11,
+        329,
+        55
+      ],
+      [
+        14,
+        11,
+        329,
+        55
+      ]
+    ],
+    "minimumMaskOverlap": 1.0,
+    "maxAllowedBoundShiftPixels": 1
+  }
+}

@@ -228,7 +228,7 @@ const Rein = ({
   );
 };
 
-export type ChristmasTeamMode = "flight" | "standing";
+export type ChristmasTeamMode = "flight" | "standing" | "parked";
 const StandingReindeer = ({
   gltf,
   x,
@@ -259,7 +259,13 @@ const StandingReindeer = ({
     </group>
   );
 };
-const StandingSanta = ({ gltf }: { gltf: GLTF }) => {
+const StandingSanta = ({
+  gltf,
+  position = [-1.48, 0, 0.25],
+}: {
+  gltf: GLTF;
+  position?: [number, number, number];
+}) => {
   const t = useCurrentFrame() / 25;
   const rig = useMemo(() => {
     const root = prepare(clone(gltf.scene));
@@ -294,7 +300,7 @@ const StandingSanta = ({ gltf }: { gltf: GLTF }) => {
   bone(root, "LeftForeArm").rotateX(0.035 * Math.sin(t * 1.4));
   root.updateMatrixWorld(true);
   return (
-    <group position={[-1.48, 0, 0.25]} rotation={[0, 0.12, 0]}>
+    <group position={position} rotation={[0, 0.12, 0]}>
       <primitive object={root} />
     </group>
   );
@@ -368,11 +374,42 @@ const FlightTeam = ({ models }: { models: Bundle }) => {
     </group>
   );
 };
+const ParkedTeam = ({ models }: { models: Bundle }) => (
+  <>
+    <Sleigh gltf={models.sleigh} />
+    <StandingSanta gltf={models.santa} position={[-1.9, 0, -2.5]} />
+    {[
+      { x: -0.8, z: 0.15, phase: 0 },
+      { x: 0.8, z: 0.15, phase: 1.3 },
+      { x: -0.8, z: 2.8, phase: 2.1 },
+      { x: 0.8, z: 2.8, phase: 3.4 },
+    ].map((r, i) => (
+      <StandingReindeer key={i} gltf={models.deer} {...r} />
+    ))}
+    {[-0.8, 0.8].map((x, i) => (
+      <React.Fragment key={x}>
+        <Rein from={[x * 0.35, 1.3, -2.45]} to={[x, 1.65, 0.6]} phase={i} />
+        <Rein from={[x, 1.65, 0.6]} to={[x, 1.65, 3.25]} phase={i + 0.7} />
+      </React.Fragment>
+    ))}
+    <mesh
+      rotation={[-Math.PI / 2, 0, 0]}
+      position={[0, -0.015, 0]}
+      receiveShadow
+    >
+      <planeGeometry args={[20, 20]} />
+      <shadowMaterial transparent opacity={0.25} />
+    </mesh>
+  </>
+);
 const FixedCamera = ({ mode }: { mode: ChristmasTeamMode }) => {
   const { camera } = useThree();
   if (mode === "flight") {
     camera.position.set(-12, 3.3, 2);
     camera.lookAt(0, 1.25, -0.35);
+  } else if (mode === "parked") {
+    camera.position.set(-11, 4.1, 9);
+    camera.lookAt(0, 1, -0.1);
   } else {
     camera.position.set(4, 2.4, 8);
     camera.lookAt(0, 1, 0);
@@ -427,8 +464,8 @@ export const AnimatedChristmasTeam = ({
   return (
     <div
       aria-label={
-        mode === "standing"
-          ? "Animated Santa standing with reindeer"
+        mode !== "flight"
+          ? "Animated Santa standing with reindeer and parked sleigh"
           : "Animated Santa and reindeer in flight"
       }
       style={{
@@ -444,7 +481,7 @@ export const AnimatedChristmasTeam = ({
           style={{ position: "absolute", inset: 0 }}
           width={width}
           height={height}
-          camera={{ fov: mode === "flight" ? 26 : 29, near: 0.08, far: 100 }}
+          camera={{ fov: mode === "standing" ? 29 : 26, near: 0.08, far: 100 }}
           gl={{
             alpha: true,
             antialias: true,
@@ -475,6 +512,8 @@ export const AnimatedChristmasTeam = ({
           <FixedCamera mode={mode} />
           {mode === "flight" ? (
             <FlightTeam models={models} />
+          ) : mode === "parked" ? (
+            <ParkedTeam models={models} />
           ) : (
             <>
               <StandingSanta gltf={models.santa} />

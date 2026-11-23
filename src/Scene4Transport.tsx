@@ -227,25 +227,21 @@ export const Scene4Analysis = () => {
             return (
               <g key={name}>
                 <circle cx={p.x} cy={p.y} r="4" fill="#F2EFE6" />
-                <text
-                  x={p.x + 10}
-                  y={p.y - 9}
-                  fill="#E7F0F2"
-                  fontSize="12"
-                  letterSpacing="1.3"
-                >
-                  {name}
-                </text>
               </g>
             );
           })}
-          <text x="160" y="455" fill="#F7AD83" fontSize="20" letterSpacing="3">
-            M50
-          </text>
-          <text x="370" y="520" fill="#AAC3CE" fontSize="12" letterSpacing="2">
-            SLEIGH FLIGHT CORRIDOR / CONCEPT
-          </text>
         </svg>
+        <Img
+          alt="Dublin map place names and sleigh corridor"
+          src={staticFile("assets/annotations/transport-map-labels.svg")}
+          style={{
+            position: "absolute",
+            inset: 0,
+            width: 985,
+            height: 670,
+            pointerEvents: "none",
+          }}
+        />
         {route > 0 ? (
           <div style={{ position: "absolute", inset: 0, opacity: route }}>
             <AnimatedChristmasTeam

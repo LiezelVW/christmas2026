@@ -66,3 +66,7 @@ All included assets are below GitHub’s 100 MB individual-file limit, so this r
 The current source combines the latest approved animation branch (`d992409`) with the approved 198-portrait roster from `8731e7a`. No model, cinematic plate, official logo, takeoff motion or scene timing was replaced. See [update notes](docs/UPDATE-2026-11-23.md) and [roster audit](docs/ROSTER-AUDIT.json).
 
 `npm run render` produces a silent H.264 MP4; it deliberately omits the audio track. Shane’s final voiceover and music will be added in After Effects. No ElevenLabs recording is used. The planned green-screen and office footage can be integrated when supplied.
+
+## Engineering label correction
+
+Engineering callout panels use single vector images with outlined Montserrat lettering to avoid SVG text/background separation during camera movement. Regenerate these included assets with `npm run build:labels` after `npm ci`. Scene 5 shows the parked sleigh and all four rigged reindeer beside Santa, with workshop wind/solar annotations. See [label and sustainability validation](docs/LABELS-AND-SUSTAINABILITY.md).
