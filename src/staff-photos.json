@@ -30,12 +30,6 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-006.jpg",
-    "name": "Aine Sweeney (2)",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
     "src": "assets/staff-mosaic/staff-007.jpg",
     "name": "Aine Sweeney",
     "office": "",
@@ -49,7 +43,7 @@
   },
   {
     "src": "assets/staff-mosaic/staff-009.jpg",
-    "name": "Alan O Donovan",
+    "name": "Alan ODonovan",
     "office": "",
     "position": "50% 30%"
   },
@@ -60,8 +54,8 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-011.jpg",
-    "name": "Anderson Costa",
+    "src": "assets/staff-mosaic/staff-014.jpg",
+    "name": "Andre Barbosa Gomes",
     "office": "",
     "position": "50% 30%"
   },
@@ -78,20 +72,8 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-014.jpg",
-    "name": "AndréBarbosa",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
     "src": "assets/staff-mosaic/staff-015.jpg",
-    "name": "Angus Mc Conill",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-016.jpg",
-    "name": "Anne Morisson",
+    "name": "Angus McConill",
     "office": "",
     "position": "50% 30%"
   },
@@ -108,26 +90,14 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-019.jpg",
-    "name": "Aoife Mc Cormack",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-020.jpg",
-    "name": "Arethusa Goedert",
+    "src": "assets/staff-mosaic/staff-022.jpg",
+    "name": "Árón Ó Conaill",
     "office": "",
     "position": "50% 30%"
   },
   {
     "src": "assets/staff-mosaic/staff-021.jpg",
     "name": "Ayman Abdelgawad",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-022.jpg",
-    "name": "Árón ÓConaill",
     "office": "",
     "position": "50% 30%"
   },
@@ -170,12 +140,6 @@
   {
     "src": "assets/staff-mosaic/staff-029.jpg",
     "name": "Caoimhe Kelleher",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-030.jpg",
-    "name": "Carlo Sidoti (2)",
     "office": "",
     "position": "50% 30%"
   },
@@ -234,12 +198,6 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-040.jpg",
-    "name": "Clinton Hendricks",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
     "src": "assets/staff-mosaic/staff-041.jpg",
     "name": "Collin Kadani",
     "office": "",
@@ -264,12 +222,6 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-045.jpg",
-    "name": "Conor Brady",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
     "src": "assets/staff-mosaic/staff-046.jpg",
     "name": "Conor Carroll",
     "office": "",
@@ -282,12 +234,6 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-048.jpg",
-    "name": "Conor O Loughlin",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
     "src": "assets/staff-mosaic/staff-049.jpg",
     "name": "Cristina Diaconu",
     "office": "",
@@ -295,13 +241,13 @@
   },
   {
     "src": "assets/staff-mosaic/staff-050.jpg",
-    "name": "Daire De Burca",
+    "name": "Daire de Burca",
     "office": "",
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-051.jpg",
-    "name": "Daniel Cowan",
+    "src": "assets/staff-mosaic/staff-056.jpg",
+    "name": "Dan Reilly",
     "office": "",
     "position": "50% 30%"
   },
@@ -313,25 +259,13 @@
   },
   {
     "src": "assets/staff-mosaic/staff-053.jpg",
-    "name": "Danielle Ximenes",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-054.jpg",
-    "name": "Danko Junasevic",
+    "name": "Danielle Ximenes Do Carmo",
     "office": "",
     "position": "50% 30%"
   },
   {
     "src": "assets/staff-mosaic/staff-055.jpg",
     "name": "Danny Pio Murphy",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-056.jpg",
-    "name": "Dan Reilly",
     "office": "",
     "position": "50% 30%"
   },
@@ -344,12 +278,6 @@
   {
     "src": "assets/staff-mosaic/staff-058.jpg",
     "name": "Darren Goodman",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-059.jpg",
-    "name": "Darren Richardson",
     "office": "",
     "position": "50% 30%"
   },
@@ -384,12 +312,6 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-065.jpg",
-    "name": "David Grant",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
     "src": "assets/staff-mosaic/staff-066.jpg",
     "name": "David Hutchinson",
     "office": "",
@@ -403,19 +325,13 @@
   },
   {
     "src": "assets/staff-mosaic/staff-068.jpg",
-    "name": "David O Halloran",
+    "name": "David O'Halloran",
     "office": "",
     "position": "50% 30%"
   },
   {
     "src": "assets/staff-mosaic/staff-069.jpg",
     "name": "David Sheehan",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-070.jpg",
-    "name": "David Slattery Org",
     "office": "",
     "position": "50% 30%"
   },
@@ -450,12 +366,6 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-076.jpg",
-    "name": "Dylan Whelan",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
     "src": "assets/staff-mosaic/staff-077.jpg",
     "name": "Eamon O Regan",
     "office": "",
@@ -474,20 +384,8 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-080.jpg",
-    "name": "Emma Galvin",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
     "src": "assets/staff-mosaic/staff-081.jpg",
-    "name": "Emmet Nichol",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-082.jpg",
-    "name": "Enrique Marenco Jimenez",
+    "name": "Emmett Nichol",
     "office": "",
     "position": "50% 30%"
   },
@@ -510,12 +408,6 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-086.jpg",
-    "name": "Gabriel Brits",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
     "src": "assets/staff-mosaic/staff-087.jpg",
     "name": "Gabriel Karpavicius",
     "office": "",
@@ -528,20 +420,14 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-089.jpg",
-    "name": "Geraldo Souza",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
     "src": "assets/staff-mosaic/staff-090.jpg",
-    "name": "Gerard Mc Cann",
+    "name": "Gerard McCann",
     "office": "",
     "position": "50% 30%"
   },
   {
     "src": "assets/staff-mosaic/staff-091.jpg",
-    "name": "Gideon Ong Era",
+    "name": "Gideon Ong'era",
     "office": "",
     "position": "50% 30%"
   },
@@ -558,26 +444,14 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-094.jpg",
-    "name": "Grace O Brien Teams",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
     "src": "assets/staff-mosaic/staff-095.jpg",
-    "name": "Grace O Brien",
+    "name": "Grace O'Brien",
     "office": "",
     "position": "50% 30%"
   },
   {
     "src": "assets/staff-mosaic/staff-096.jpg",
     "name": "Grant Humphrey",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-097.jpg",
-    "name": "Gráinne Grogan",
     "office": "",
     "position": "50% 30%"
   },
@@ -590,12 +464,6 @@
   {
     "src": "assets/staff-mosaic/staff-099.jpg",
     "name": "Hannah Hodges",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-100.jpg",
-    "name": "Heinrich Van Heerden",
     "office": "",
     "position": "50% 30%"
   },
@@ -618,24 +486,6 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-104.jpg",
-    "name": "Ivan Brcic",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-105.jpg",
-    "name": "Jack Butler",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-106.jpg",
-    "name": "Jack Clarke",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
     "src": "assets/staff-mosaic/staff-107.jpg",
     "name": "Jack Donohue",
     "office": "",
@@ -643,43 +493,19 @@
   },
   {
     "src": "assets/staff-mosaic/staff-108.jpg",
-    "name": "Jack O Callaghan",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-109.jpg",
-    "name": "Jaen B Sandwyk",
+    "name": "Jack O'Callaghan",
     "office": "",
     "position": "50% 30%"
   },
   {
     "src": "assets/staff-mosaic/staff-110.jpg",
-    "name": "Jake O Reilly",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-111.jpg",
-    "name": "James Bourke",
+    "name": "Jake O'Reilly",
     "office": "",
     "position": "50% 30%"
   },
   {
     "src": "assets/staff-mosaic/staff-112.jpg",
     "name": "James Gribben",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-113.jpg",
-    "name": "James O Hara",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-114.jpg",
-    "name": "James Redmond",
     "office": "",
     "position": "50% 30%"
   },
@@ -691,7 +517,7 @@
   },
   {
     "src": "assets/staff-mosaic/staff-116.jpg",
-    "name": "Jane Foran_Teams",
+    "name": "Jane Foran",
     "office": "",
     "position": "50% 30%"
   },
@@ -704,12 +530,6 @@
   {
     "src": "assets/staff-mosaic/staff-118.jpg",
     "name": "Jane Murphy",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-119.jpg",
-    "name": "Javad Eslamzadeh",
     "office": "",
     "position": "50% 30%"
   },
@@ -756,12 +576,6 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-127.jpg",
-    "name": "John Kieran",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
     "src": "assets/staff-mosaic/staff-128.jpg",
     "name": "John Meaney",
     "office": "",
@@ -780,12 +594,6 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-131.jpg",
-    "name": "Kabelo Mokoka",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
     "src": "assets/staff-mosaic/staff-132.jpg",
     "name": "Karan Mandalia",
     "office": "",
@@ -793,7 +601,7 @@
   },
   {
     "src": "assets/staff-mosaic/staff-133.jpg",
-    "name": "Karl L Estrange",
+    "name": "Karl L'Estrange",
     "office": "",
     "position": "50% 30%"
   },
@@ -847,19 +655,7 @@
   },
   {
     "src": "assets/staff-mosaic/staff-142.jpg",
-    "name": "Laura Mc Loughlin",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-143.jpg",
-    "name": "Laurence Endersen",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-144.jpg",
-    "name": "Lauren Lacey",
+    "name": "Laura McLoughlin",
     "office": "",
     "position": "50% 30%"
   },
@@ -870,32 +666,14 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-146.jpg",
-    "name": "Liam Brehon",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-147.jpg",
-    "name": "Lidi Pan",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
     "src": "assets/staff-mosaic/staff-148.jpg",
-    "name": "Liezel Chetty",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-149.jpg",
-    "name": "Linda Madlala",
+    "name": "Liezel Van Wyhe",
     "office": "",
     "position": "50% 30%"
   },
   {
     "src": "assets/staff-mosaic/staff-150.jpg",
-    "name": "Lisa Drohan Web",
+    "name": "Lisa Drohan",
     "office": "",
     "position": "50% 30%"
   },
@@ -919,25 +697,19 @@
   },
   {
     "src": "assets/staff-mosaic/staff-154.jpg",
-    "name": "Luza Rocha",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-155.jpg",
-    "name": "Madeleine Cush",
+    "name": "Luza Fonseca Rocha",
     "office": "",
     "position": "50% 30%"
   },
   {
     "src": "assets/staff-mosaic/staff-156.jpg",
-    "name": "Maeve Mc Carthy",
+    "name": "Maeve McCarthy",
     "office": "",
     "position": "50% 30%"
   },
   {
     "src": "assets/staff-mosaic/staff-157.jpg",
-    "name": "Margret M Ccormack",
+    "name": "Margaret McCormack",
     "office": "",
     "position": "50% 30%"
   },
@@ -954,26 +726,8 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-160.jpg",
-    "name": "Mark Caffrey",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
     "src": "assets/staff-mosaic/staff-161.jpg",
     "name": "Mark Kelly",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-162.jpg",
-    "name": "Mark Mc Kenna",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-163.jpg",
-    "name": "Mark O Mahony",
     "office": "",
     "position": "50% 30%"
   },
@@ -1014,14 +768,8 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-170.jpg",
-    "name": "Mattias Juhász Teams",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
     "src": "assets/staff-mosaic/staff-171.jpg",
-    "name": "Mattias Juhász",
+    "name": "Mattias Juhász",
     "office": "",
     "position": "50% 30%"
   },
@@ -1038,14 +786,8 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-174.jpg",
-    "name": "Michael Drennan",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
     "src": "assets/staff-mosaic/staff-175.jpg",
-    "name": "Mohamed Noureldin Mubarak",
+    "name": "Mohamed Noureldin Mubarak Mohamed Ahmed",
     "office": "",
     "position": "50% 30%"
   },
@@ -1069,7 +811,7 @@
   },
   {
     "src": "assets/staff-mosaic/staff-179.jpg",
-    "name": "Muzomkhulu Ncube",
+    "name": "Muzi Ncube",
     "office": "",
     "position": "50% 30%"
   },
@@ -1104,12 +846,6 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-185.jpg",
-    "name": "Nkumbi Nganduna",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
     "src": "assets/staff-mosaic/staff-186.jpg",
     "name": "Noah Ncube",
     "office": "",
@@ -1118,12 +854,6 @@
   {
     "src": "assets/staff-mosaic/staff-187.jpg",
     "name": "Noel Gorman",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-188.jpg",
-    "name": "Noelia Rodriguez",
     "office": "",
     "position": "50% 30%"
   },
@@ -1148,12 +878,6 @@
   {
     "src": "assets/staff-mosaic/staff-192.jpg",
     "name": "Owen Farrington",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-193.jpg",
-    "name": "Pat Sheerin",
     "office": "",
     "position": "50% 30%"
   },
@@ -1206,20 +930,14 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-202.jpg",
-    "name": "Richard Tichauer Square",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
     "src": "assets/staff-mosaic/staff-203.jpg",
     "name": "Riyaaz Ebrahim",
     "office": "",
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-204.jpg",
-    "name": "Robert O Rourke (2)",
+    "src": "assets/staff-mosaic/staff-207.jpg",
+    "name": "Robert Kelly",
     "office": "",
     "position": "50% 30%"
   },
@@ -1230,26 +948,14 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-206.jpg",
-    "name": "Rob Kelly Org",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-207.jpg",
-    "name": "Rob Kelly",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
     "src": "assets/staff-mosaic/staff-208.jpg",
-    "name": "Robyn O Keefe",
+    "name": "Robyn O'Keefe",
     "office": "",
     "position": "50% 30%"
   },
   {
     "src": "assets/staff-mosaic/staff-209.jpg",
-    "name": "Rodrigo Hernandez_Teams",
+    "name": "Rodrigo Hernandez",
     "office": "",
     "position": "50% 30%"
   },
@@ -1278,18 +984,6 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-214.jpg",
-    "name": "Ryan Keenan",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-215.jpg",
-    "name": "Ryan Parkes",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
     "src": "assets/staff-mosaic/staff-216.jpg",
     "name": "Sai Janapareddy",
     "office": "",
@@ -1297,13 +991,7 @@
   },
   {
     "src": "assets/staff-mosaic/staff-217.jpg",
-    "name": "Samuel Keating2023",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-218.jpg",
-    "name": "Sayed Saeed",
+    "name": "Samuel Keating",
     "office": "",
     "position": "50% 30%"
   },
@@ -1314,20 +1002,8 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-220.jpg",
-    "name": "Sean Quinn",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
     "src": "assets/staff-mosaic/staff-221.jpg",
     "name": "Sean Walsh",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-222.jpg",
-    "name": "Shane Miley",
     "office": "",
     "position": "50% 30%"
   },
@@ -1339,7 +1015,13 @@
   },
   {
     "src": "assets/staff-mosaic/staff-224.jpg",
-    "name": "Shane Mc Govern",
+    "name": "Shane McGovern",
+    "office": "",
+    "position": "50% 30%"
+  },
+  {
+    "src": "assets/staff-mosaic/staff-222.jpg",
+    "name": "Shane Miley",
     "office": "",
     "position": "50% 30%"
   },
@@ -1363,19 +1045,13 @@
   },
   {
     "src": "assets/staff-mosaic/staff-228.jpg",
-    "name": "Sradhe Sunilraj",
+    "name": "Sradha Sunilraj",
     "office": "",
     "position": "50% 30%"
   },
   {
     "src": "assets/staff-mosaic/staff-229.jpg",
     "name": "Steven Corroon",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-230.jpg",
-    "name": "Sudhir Kothandapani",
     "office": "",
     "position": "50% 30%"
   },
@@ -1422,12 +1098,6 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-238.jpg",
-    "name": "Tiarnan Hegarty",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
     "src": "assets/staff-mosaic/staff-239.jpg",
     "name": "Tony Redmond",
     "office": "",
@@ -1453,13 +1123,7 @@
   },
   {
     "src": "assets/staff-mosaic/staff-243.jpg",
-    "name": "Venkata Chandra",
-    "office": "",
-    "position": "50% 30%"
-  },
-  {
-    "src": "assets/staff-mosaic/staff-244.jpg",
-    "name": "Vincenzo Koopman",
+    "name": "Venkata Satya Sai Chandra Sekhar Veeraghantla",
     "office": "",
     "position": "50% 30%"
   },
@@ -1476,14 +1140,50 @@
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-247.jpg",
-    "name": "Vuk Galavic",
+    "src": "assets/staff-mosaic/staff-248.jpg",
+    "name": "Wadzanai Mawire",
     "office": "",
     "position": "50% 30%"
   },
   {
-    "src": "assets/staff-mosaic/staff-248.jpg",
-    "name": "Wadzanai Mawire",
+    "src": "assets/staff-mosaic/staff-040.jpg",
+    "name": "Clinton Hendricks",
+    "office": "",
+    "position": "50% 30%"
+  },
+  {
+    "src": "assets/staff-mosaic/staff-054.jpg",
+    "name": "Danko Junasevic",
+    "office": "",
+    "position": "50% 30%"
+  },
+  {
+    "src": "assets/staff-mosaic/staff-100.jpg",
+    "name": "Heinrich Van Heerden",
+    "office": "",
+    "position": "50% 30%"
+  },
+  {
+    "src": "assets/staff-mosaic/staff-104.jpg",
+    "name": "Ivan Brcic",
+    "office": "",
+    "position": "50% 30%"
+  },
+  {
+    "src": "assets/staff-mosaic/staff-109.jpg",
+    "name": "Jaen B Van Sandwyk",
+    "office": "",
+    "position": "50% 30%"
+  },
+  {
+    "src": "assets/staff-mosaic/staff-193.jpg",
+    "name": "Pat Sheerin",
+    "office": "",
+    "position": "50% 30%"
+  },
+  {
+    "src": "assets/staff-mosaic/staff-202.jpg",
+    "name": "Richard Tichauer",
     "office": "",
     "position": "50% 30%"
   }
