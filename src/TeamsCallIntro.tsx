@@ -286,13 +286,25 @@ export const TeamsCallIntro = () => {
           </div>
         </div>
         {f < 77 ? (
+          <AbsoluteFill
+            data-incoming-call-dim
+            style={{
+              background: "#000",
+              opacity: toast * 0.68,
+              pointerEvents: "none",
+            }}
+          />
+        ) : null}
+        {f < 77 ? (
           <div
             style={{
               position: "absolute",
-              width: 340,
-              height: 520,
-              right: 32,
-              top: 200,
+              width: 650,
+              height: 426,
+              left: "50%",
+              marginLeft: -325,
+              top: 428,
+              marginTop: -213,
               borderRadius: 14,
               border: "1px solid #76717E",
               background: "linear-gradient(145deg,#514F64,#302E41)",
@@ -365,7 +377,7 @@ export const TeamsCallIntro = () => {
                 viewBox="0 0 44 50"
                 style={{
                   position: "absolute",
-                  left: 55 + (1 - p(f, 43, 63)) * 120,
+                  left: 100 + (1 - p(f, 43, 63)) * 120,
                   top: 355 + (1 - p(f, 43, 63)) * 75,
                   filter: "drop-shadow(0 2px 3px #000)",
                 }}

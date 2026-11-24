@@ -255,6 +255,9 @@ const People = ({ flypast = false }: { flypast?: boolean }) => {
         style={{
           position: "absolute",
           left: 100,
+          right: 100,
+          textAlign: "center",
+          fontStyle: "italic",
           top: 235,
           fontSize: 36,
           fontWeight: 500,

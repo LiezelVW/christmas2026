@@ -1,10 +1,10 @@
 {
   "project": "DBFL Operation Christmas 2026",
-  "version": "All twelve directors visible throughout the call; approved 198-person roster plus supplied Yasheel portrait; subtitles off",
-  "file_count_excluding_this_inventory": 351,
+  "version": "Centred dramatic Santa call; centred italic mosaic greeting; rigged Santa petting reindeer; 199 portraits; subtitles off",
+  "file_count_excluding_this_inventory": 352,
   "asset_files": 288,
   "prepared_staff_portraits": 199,
-  "total_bytes": 69440461,
+  "total_bytes": 69445071,
   "largest_file": {
     "path": "public/assets/characters/santa-claus-rigged.glb",
     "bytes": 13527540,
@@ -89,6 +89,11 @@
       "path": "docs/approved-roster-additions.json",
       "bytes": 143,
       "sha256": "e39f8a0536002ae8f1df19dd695d878a94a76bb627951a760922c5e496caa259"
+    },
+    {
+      "path": "docs/review/centred-call-petting-2026-11-24.md",
+      "bytes": 1544,
+      "sha256": "0a78a3741d401e25d4377f81966710b157194cfb9c4649d3c7b16fa344142530"
     },
     {
       "path": "docs/review/directors-incoming-gallery.png",
@@ -1647,8 +1652,8 @@
     },
     {
       "path": "src/AnimatedChristmasTeam.tsx",
-      "bytes": 16512,
-      "sha256": "bcea25e4037326293c310daf0a6edaeb5a4c629ad2b209f00578068fca314dcb"
+      "bytes": 19174,
+      "sha256": "4176cc6e801584435f12b03209a7a9b5c7d0295e50cabefc929226982beee0cc"
     },
     {
       "path": "src/ApprovedRunwayTakeoff.tsx",
@@ -1702,8 +1707,8 @@
     },
     {
       "path": "src/Scene6Finale.tsx",
-      "bytes": 10847,
-      "sha256": "0d851ab5ee95a9ddc2cbc4e997dbd3a0a12e373bb17e4309977423e5fe6478c6"
+      "bytes": 10931,
+      "sha256": "3eda0558008af294b22d6e78d7e548afc08f7f19094733cb82b0b003c4156b49"
     },
     {
       "path": "src/Scenes.tsx",
@@ -1727,8 +1732,8 @@
     },
     {
       "path": "src/TeamsCallIntro.tsx",
-      "bytes": 11952,
-      "sha256": "e39a5a222d1a7cbbbc6debf27578ba4a9b6117a1bf96ce360a5c2331181ce7c5"
+      "bytes": 12272,
+      "sha256": "fdbed7baab28a6edf7dd2cf7528e5bd931ea74399056cfdc1da007c6b674ce87"
     },
     {
       "path": "src/components.tsx",

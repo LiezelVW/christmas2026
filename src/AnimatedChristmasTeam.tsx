@@ -229,16 +229,26 @@ const Rein = ({
 };
 
 export type ChristmasTeamMode = "flight" | "standing" | "parked";
+// Shared scene-space contact point keeps the hand attached to the animated neck.
+const petAmount = (t: number) => {
+  const smooth = (v: number) => {
+    const x = T.MathUtils.clamp(v, 0, 1);
+    return x * x * (3 - 2 * x);
+  };
+  return smooth((t - 4) / 1.2) * (1 - smooth((t - 10.5) / 1.2));
+};
 const StandingReindeer = ({
   gltf,
   x,
   z,
   phase,
+  contact,
 }: {
   gltf: GLTF;
   x: number;
   z: number;
   phase: number;
+  contact?: T.Vector3;
 }) => {
   const t = useCurrentFrame() / 25;
   const rig = useMemo(() => {
@@ -252,7 +262,16 @@ const StandingReindeer = ({
   rig.mixer.setTime(t * 0.75 + phase);
   bone(rig.root, "neck").rotateX(Math.sin(t * 1.7 + phase) * 0.012);
   bone(rig.root, "head").rotateY(Math.sin(t * 0.85 + phase) * 0.025);
+  if (contact) {
+    bone(rig.root, "neck").rotateZ(petAmount(t) * 0.055);
+    bone(rig.root, "head").rotateY(-petAmount(t) * 0.08);
+  }
   rig.root.updateMatrixWorld(true);
+  if (contact) {
+    const point = bone(rig.root, "head").getWorldPosition(new T.Vector3());
+    rig.root.worldToLocal(point);
+    contact.copy(point).add(new T.Vector3(x - 0.14, 0.025, z - 0.09));
+  }
   return (
     <group position={[x, 0, z]}>
       <primitive object={rig.root} />
@@ -262,9 +281,11 @@ const StandingReindeer = ({
 const StandingSanta = ({
   gltf,
   position = [-1.48, 0, 0.25],
+  contact,
 }: {
   gltf: GLTF;
   position?: [number, number, number];
+  contact?: T.Vector3;
 }) => {
   const t = useCurrentFrame() / 25;
   const rig = useMemo(() => {
@@ -299,6 +320,45 @@ const StandingSanta = ({
   bone(root, "Head").rotateY(0.07 * Math.sin(t * 0.65));
   bone(root, "LeftForeArm").rotateX(0.035 * Math.sin(t * 1.4));
   root.updateMatrixWorld(true);
+  if (contact) {
+    // Work in scene coordinates, including Santa's planted position and heading.
+    const wrapper = new T.Matrix4().compose(
+      new T.Vector3(...position),
+      new T.Quaternion().setFromAxisAngle(new T.Vector3(0, 1, 0), 0.12),
+      new T.Vector3(1, 1, 1),
+    );
+    const target = contact.clone();
+    target.y += Math.sin(t * 3.4) * 0.018 * petAmount(t);
+    target.z += Math.sin(t * 3.4) * 0.045 * petAmount(t);
+    target.applyMatrix4(wrapper.invert());
+    // Convert to the rig's current parent coordinate system before solving.
+    root.parent?.updateWorldMatrix(true, false);
+    if (root.parent) target.applyMatrix4(root.parent.matrixWorld);
+    const hand = bone(root, "LeftHand");
+    const start = hand.getWorldPosition(new T.Vector3());
+    target.lerpVectors(start, target.clone(), petAmount(t));
+    for (let iteration = 0; iteration < 14; iteration++) {
+      for (const name of ["LeftForeArm", "LeftArm"]) {
+        const joint = bone(root, name);
+        const origin = joint.getWorldPosition(new T.Vector3());
+        const current = hand
+          .getWorldPosition(new T.Vector3())
+          .sub(origin)
+          .normalize();
+        const desired = target.clone().sub(origin).normalize();
+        const turn = new T.Quaternion().setFromUnitVectors(current, desired);
+        const world = joint
+          .getWorldQuaternion(new T.Quaternion())
+          .premultiply(turn);
+        const parent = joint
+          .parent!.getWorldQuaternion(new T.Quaternion())
+          .invert();
+        joint.quaternion.copy(parent.multiply(world));
+        joint.updateMatrixWorld(true);
+      }
+    }
+    bone(root, "Head").rotateY(0.25 * petAmount(t));
+  }
   return (
     <group position={position} rotation={[0, 0.12, 0]}>
       <primitive object={root} />
@@ -374,34 +434,46 @@ const FlightTeam = ({ models }: { models: Bundle }) => {
     </group>
   );
 };
-const ParkedTeam = ({ models }: { models: Bundle }) => (
-  <>
-    <Sleigh gltf={models.sleigh} />
-    <StandingSanta gltf={models.santa} position={[-1.9, 0, -2.5]} />
-    {[
-      { x: -0.8, z: 0.15, phase: 0 },
-      { x: 0.8, z: 0.15, phase: 1.3 },
-      { x: -0.8, z: 2.8, phase: 2.1 },
-      { x: 0.8, z: 2.8, phase: 3.4 },
-    ].map((r, i) => (
-      <StandingReindeer key={i} gltf={models.deer} {...r} />
-    ))}
-    {[-0.8, 0.8].map((x, i) => (
-      <React.Fragment key={x}>
-        <Rein from={[x * 0.35, 1.3, -2.45]} to={[x, 1.65, 0.6]} phase={i} />
-        <Rein from={[x, 1.65, 0.6]} to={[x, 1.65, 3.25]} phase={i + 0.7} />
-      </React.Fragment>
-    ))}
-    <mesh
-      rotation={[-Math.PI / 2, 0, 0]}
-      position={[0, -0.015, 0]}
-      receiveShadow
-    >
-      <planeGeometry args={[20, 20]} />
-      <shadowMaterial transparent opacity={0.25} />
-    </mesh>
-  </>
-);
+const ParkedTeam = ({ models }: { models: Bundle }) => {
+  const contact = useMemo(() => new T.Vector3(), []);
+  return (
+    <>
+      <Sleigh gltf={models.sleigh} />
+      {[
+        { x: -0.8, z: 0.15, phase: 0 },
+        { x: 0.8, z: 0.15, phase: 1.3 },
+        { x: -0.8, z: 2.8, phase: 2.1 },
+        { x: 0.8, z: 2.8, phase: 3.4 },
+      ].map((r, i) => (
+        <StandingReindeer
+          key={i}
+          gltf={models.deer}
+          {...r}
+          contact={i === 0 ? contact : undefined}
+        />
+      ))}
+      <StandingSanta
+        gltf={models.santa}
+        position={[-1.55, 0, 0.65]}
+        contact={contact}
+      />
+      {[-0.8, 0.8].map((x, i) => (
+        <React.Fragment key={x}>
+          <Rein from={[x * 0.35, 1.3, -2.45]} to={[x, 1.65, 0.6]} phase={i} />
+          <Rein from={[x, 1.65, 0.6]} to={[x, 1.65, 3.25]} phase={i + 0.7} />
+        </React.Fragment>
+      ))}
+      <mesh
+        rotation={[-Math.PI / 2, 0, 0]}
+        position={[0, -0.015, 0]}
+        receiveShadow
+      >
+        <planeGeometry args={[20, 20]} />
+        <shadowMaterial transparent opacity={0.25} />
+      </mesh>
+    </>
+  );
+};
 const FixedCamera = ({ mode }: { mode: ChristmasTeamMode }) => {
   const { camera } = useThree();
   if (mode === "flight") {
