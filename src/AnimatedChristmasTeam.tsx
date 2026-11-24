@@ -1,3 +1,10 @@
+import {
+  poseSantaWrist,
+  poseSantaReinWrists,
+  poseSantaGripGloves,
+  updateSantaReinGrips,
+  type ReinGrips,
+} from "./SantaWrist";
 import React, { useEffect, useMemo, useState } from "react";
 import {
   staticFile,
@@ -134,11 +141,12 @@ const FlyingReindeer = ({
   );
 };
 
-const SeatedSanta = ({ gltf }: { gltf: GLTF }) => {
+const SeatedSanta = ({ gltf, grips }: { gltf: GLTF; grips: ReinGrips }) => {
   const frame = useCurrentFrame(),
     t = frame / 25;
   const rig = useMemo(() => {
     const root = prepare(clone(gltf.scene));
+    poseSantaGripGloves(root);
     const rest = new Map<
       T.Object3D,
       { p: T.Vector3; q: T.Quaternion; s: T.Vector3 }
@@ -181,6 +189,12 @@ const SeatedSanta = ({ gltf }: { gltf: GLTF }) => {
   bone(root, "Spine").rotateX(0.035 * Math.sin(t * 3.1));
   bone(root, "LeftForeArm").rotateX(0.018 * Math.sin(t * 3.4));
   bone(root, "RightForeArm").rotateX(0.018 * Math.sin(t * 3.4 + 0.4));
+  poseSantaReinWrists(root);
+  updateSantaReinGrips(
+    root,
+    grips,
+    new T.Matrix4().makeTranslation(0, -0.06, -3.2),
+  );
   root.updateMatrixWorld(true);
   return (
     <group position={[0, -0.06, -3.2]}>
@@ -357,6 +371,13 @@ const StandingSanta = ({
         joint.updateMatrixWorld(true);
       }
     }
+    // Fingers follow the neck; palm (-Z in the supplied glove) faces the animal.
+    poseSantaWrist(
+      hand,
+      new T.Vector3(0, -0.25, 1),
+      new T.Vector3(-1, 0.15, 0),
+      petAmount(t),
+    );
     bone(root, "Head").rotateY(0.25 * petAmount(t));
   }
   return (
@@ -400,6 +421,13 @@ const Sleigh = ({ gltf }: { gltf: GLTF }) => {
   );
 };
 const FlightTeam = ({ models }: { models: Bundle }) => {
+  const grips = useMemo<ReinGrips>(
+    () => [
+      [0, 0, 0],
+      [0, 0, 0],
+    ],
+    [],
+  );
   const t = useCurrentFrame() / 25;
   return (
     <group
@@ -410,7 +438,7 @@ const FlightTeam = ({ models }: { models: Bundle }) => {
       ]}
     >
       <Sleigh gltf={models.sleigh} />
-      <SeatedSanta gltf={models.santa} />
+      <SeatedSanta gltf={models.santa} grips={grips} />
       {[
         { x: -0.65, z: 0.15, p: 0 },
         { x: 0.65, z: 0.15, p: 0.11 },
@@ -427,7 +455,7 @@ const FlightTeam = ({ models }: { models: Bundle }) => {
       ))}
       {[-0.65, 0.65].map((x, i) => (
         <React.Fragment key={x}>
-          <Rein from={[x * 0.35, 1.3, -2.45]} to={[x, 1.65, 0.6]} phase={i} />
+          <Rein from={grips[i]} to={[x, 1.65, 0.6]} phase={i} />
           <Rein from={[x, 1.65, 0.6]} to={[x, 1.65, 2.95]} phase={i + 0.7} />
         </React.Fragment>
       ))}

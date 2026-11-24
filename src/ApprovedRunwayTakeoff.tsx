@@ -1,3 +1,9 @@
+import {
+  poseSantaReinWrists,
+  poseSantaGripGloves,
+  updateSantaReinGrips,
+  type ReinGrips,
+} from "./SantaWrist";
 import React, { useEffect, useMemo, useState } from "react";
 import {
   AbsoluteFill,
@@ -158,11 +164,20 @@ const Reindeer = ({
   );
 };
 
-export const Santa = ({ gltf }: { gltf: GLTF }) => {
+export const Santa = ({
+  gltf,
+  grips,
+  reinTransform,
+}: {
+  gltf: GLTF;
+  grips?: ReinGrips;
+  reinTransform?: T.Matrix4;
+}) => {
   const frame = useCurrentFrame(),
     t = frame / 25;
   const rig = useMemo(() => {
     const root = prepare(clone(gltf.scene));
+    poseSantaGripGloves(root);
     const rest = new Map<
       T.Object3D,
       { p: T.Vector3; q: T.Quaternion; s: T.Vector3 }
@@ -205,6 +220,8 @@ export const Santa = ({ gltf }: { gltf: GLTF }) => {
   bone(root, "Spine").rotateX(0.035 * Math.sin(t * 3.1));
   bone(root, "LeftForeArm").rotateX(0.018 * Math.sin(t * 3.4));
   bone(root, "RightForeArm").rotateX(0.018 * Math.sin(t * 3.4 + 0.4));
+  poseSantaReinWrists(root);
+  if (grips && reinTransform) updateSantaReinGrips(root, grips, reinTransform);
   root.updateMatrixWorld(true);
   return (
     <group position={[0, -0.06, -3.2]}>
@@ -396,6 +413,13 @@ const Camera = () => {
   return null;
 };
 const Team = ({ models }: { models: Bundle }) => {
+  const grips = useMemo<ReinGrips>(
+    () => [
+      [0, 0, 0],
+      [0, 0, 0],
+    ],
+    [],
+  );
   const t = useCurrentFrame() / 25;
   const m = motion(t);
   const flight = smooth(4.25, 5.5, t);
@@ -430,6 +454,13 @@ const Team = ({ models }: { models: Bundle }) => {
   const sy = m.y;
   const pitch = -0.13 * flight;
   const bank = -0.045 * smooth(5.1, 6.7, t);
+  const reinTransform = new T.Matrix4()
+    .compose(
+      new T.Vector3(0, sy + 0.025, -3.3),
+      new T.Quaternion().setFromEuler(new T.Euler(pitch, 0, bank)),
+      new T.Vector3(1, 1, 1),
+    )
+    .multiply(new T.Matrix4().makeTranslation(0, -0.06, 0));
   return (
     <group
       position={[5.5 + 1.0 * smooth(5, 7, t), 0, m.z - 8]}
@@ -447,7 +478,11 @@ const Team = ({ models }: { models: Bundle }) => {
       </group>
       <group position={[0, sy + 0.025, -3.3]} rotation={[pitch, 0, bank]}>
         <group position={[0, 0, 3.2]}>
-          <Santa gltf={models.santa} />
+          <Santa
+            gltf={models.santa}
+            grips={grips}
+            reinTransform={reinTransform}
+          />
         </group>
       </group>
       {TEAMS.map((r, i) => (
@@ -463,7 +498,7 @@ const Team = ({ models }: { models: Bundle }) => {
       {[-0.73, 0.73].map((x, i) => (
         <React.Fragment key={x}>
           <Rein
-            from={[x * 0.3, sy + 1.28, -2.45]}
+            from={grips[i]}
             to={[x + Math.sign(x) * 0.255, deerLift(t, i) + 0.95, 0.24]}
             phase={i}
             taut={smooth(3.9, 4.9, t)}

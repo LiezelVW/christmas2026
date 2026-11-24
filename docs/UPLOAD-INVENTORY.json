@@ -1,10 +1,10 @@
 {
   "project": "DBFL Operation Christmas 2026",
-  "version": "Centred dramatic Santa call; centred italic mosaic greeting; rigged Santa petting reindeer; 199 portraits; subtitles off",
-  "file_count_excluding_this_inventory": 352,
+  "version": "Corrected Santa wrists across all animated scenes; glove-linked reins and seated grip pose; 199 portraits; subtitles off",
+  "file_count_excluding_this_inventory": 354,
   "asset_files": 288,
   "prepared_staff_portraits": 199,
-  "total_bytes": 69445071,
+  "total_bytes": 69451593,
   "largest_file": {
     "path": "public/assets/characters/santa-claus-rigged.glb",
     "bytes": 13527540,
@@ -114,6 +114,11 @@
       "path": "docs/review/mosaic-199-rendered.png",
       "bytes": 1706618,
       "sha256": "b640aa4972f44e6c1150264dd7f48599074b8d679d45dc2d02b2985cdd46f5dc"
+    },
+    {
+      "path": "docs/review/santa-wrists-and-reins-2026-11-24.md",
+      "bytes": 1390,
+      "sha256": "201bc8dbd04941bf7f508089a875d087c53a5ec92753cc8bc44520fa7ae3e614"
     },
     {
       "path": "docs/review/sustainability-full-team.png",
@@ -1652,13 +1657,13 @@
     },
     {
       "path": "src/AnimatedChristmasTeam.tsx",
-      "bytes": 19174,
-      "sha256": "4176cc6e801584435f12b03209a7a9b5c7d0295e50cabefc929226982beee0cc"
+      "bytes": 19811,
+      "sha256": "882c95290bf842ff538c7d58a8ccf90173fd9fa1e0ede8b1147a4c0fcbba958a"
     },
     {
       "path": "src/ApprovedRunwayTakeoff.tsx",
-      "bytes": 20179,
-      "sha256": "6bac04b20ea462f6afae3c5044f63a5467e19aa28fdac7eddc78200c0471958f"
+      "bytes": 20955,
+      "sha256": "1ddad0e55ba754d8c94f78a0e038b44e300c08ff2153f30966b7dbe42d4eebd8"
     },
     {
       "path": "src/AudioTimeline.tsx",
@@ -1684,6 +1689,11 @@
       "path": "src/Root.tsx",
       "bytes": 5576,
       "sha256": "21a69edb94b09805570fb565ceed1812fdcc05ad5d3bc2a042d28188b2909dcc"
+    },
+    {
+      "path": "src/SantaWrist.ts",
+      "bytes": 3719,
+      "sha256": "160e30e9c7b37ca2cad4daf3532dcef964daccc5f4f97243171991474ad014f4"
     },
     {
       "path": "src/Scene2Benchmark.tsx",
