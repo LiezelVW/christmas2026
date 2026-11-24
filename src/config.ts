@@ -1,5 +1,7 @@
 import staffPhotoConfig from "./staff-photos.json";
 export const FPS = 25;
+// Temporary preview switch; subtitle text is retained in the scene definitions below.
+export const subtitles = { enabled: false };
 export const brand = {
   orange: "#F15A29",
   charcoal: "#30383D",

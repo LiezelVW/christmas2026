@@ -1,10 +1,10 @@
 {
   "project": "DBFL Operation Christmas 2026",
-  "version": "Outlined single-image labels; complete parked sleigh and four-reindeer sustainability team; 198 approved portraits",
-  "file_count_excluding_this_inventory": 345,
+  "version": "Latest approved film with dialogue subtitles disabled by a reversible switch; subtitle file and text preserved",
+  "file_count_excluding_this_inventory": 346,
   "asset_files": 287,
   "prepared_staff_portraits": 198,
-  "total_bytes": 66899682,
+  "total_bytes": 66901731,
   "largest_file": {
     "path": "public/assets/characters/santa-claus-rigged.glb",
     "bytes": 13527540,
@@ -72,8 +72,8 @@
     },
     {
       "path": "docs/VOICEOVER.md",
-      "bytes": 592,
-      "sha256": "54d02eec621a0b69c70cfc7774f331106099b9884c2b41a630150fc3d0e962fb"
+      "bytes": 793,
+      "sha256": "537cf87124a6f8b7eb89c3a5de86d25fbae8c156e0b4b4ef372b8e273ca3a57a"
     },
     {
       "path": "docs/approved-roster-8731e7a.json",
@@ -1652,8 +1652,8 @@
     },
     {
       "path": "src/Root.tsx",
-      "bytes": 5507,
-      "sha256": "2b7116c1f3c2962352f5488dcd246e0135d0465f7e5b030c1fd6e165f259f3f4"
+      "bytes": 5576,
+      "sha256": "21a69edb94b09805570fb565ceed1812fdcc05ad5d3bc2a042d28188b2909dcc"
     },
     {
       "path": "src/Scene2Benchmark.tsx",
@@ -1696,6 +1696,11 @@
       "sha256": "ddb26c397cceeb08c6eedc856cec74c9ec5159fadb75e8c8d6c35abd6e5338e2"
     },
     {
+      "path": "src/Subtitles.tsx",
+      "bytes": 1647,
+      "sha256": "574aa64c7d3016836dd6a1a940abc892a8c67761e1119eb6803e592bc449c212"
+    },
+    {
       "path": "src/TeamsCallIntro.tsx",
       "bytes": 12294,
       "sha256": "5b884652734ae2e521c8ea7332e03db15454e56d0b5beb73ae2379a0ba0649bf"
@@ -1707,8 +1712,8 @@
     },
     {
       "path": "src/config.ts",
-      "bytes": 4003,
-      "sha256": "30ac20185df38f31a1e68e1575803315b8164dd9fa827ec4639e906a91d54a5d"
+      "bytes": 4135,
+      "sha256": "48c3a977c8504238b3e58c47e77d43dcabcec4ed3d15877c4de1746d8a5838f5"
     },
     {
       "path": "src/directors.json",

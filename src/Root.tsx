@@ -1,3 +1,4 @@
+import { SubtitleLayer } from "./Subtitles";
 import { TeamsCallIntro } from "./TeamsCallIntro";
 import { useBrandFont } from "./loadBrandFont";
 import React from "react";
@@ -82,6 +83,7 @@ export const Film = ({ teamsCall = true }: { teamsCall?: boolean }) => {
           </Sequence>
         );
       })}
+      <SubtitleLayer />
       {audioCues.map((c) => (
         <Sequence
           key={c.name}
