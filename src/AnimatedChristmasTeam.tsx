@@ -349,35 +349,53 @@ const StandingSanta = ({
     root.parent?.updateWorldMatrix(true, false);
     if (root.parent) target.applyMatrix4(root.parent.matrixWorld);
     const hand = bone(root, "LeftHand");
-    const start = hand.getWorldPosition(new T.Vector3());
-    target.lerpVectors(start, target.clone(), petAmount(t));
-    for (let iteration = 0; iteration < 14; iteration++) {
-      for (const name of ["LeftForeArm", "LeftArm"]) {
-        const joint = bone(root, name);
-        const origin = joint.getWorldPosition(new T.Vector3());
-        const current = hand
-          .getWorldPosition(new T.Vector3())
-          .sub(origin)
-          .normalize();
-        const desired = target.clone().sub(origin).normalize();
-        const turn = new T.Quaternion().setFromUnitVectors(current, desired);
-        const world = joint
-          .getWorldQuaternion(new T.Quaternion())
-          .premultiply(turn);
-        const parent = joint
-          .parent!.getWorldQuaternion(new T.Quaternion())
-          .invert();
-        joint.quaternion.copy(parent.multiply(world));
-        joint.updateMatrixWorld(true);
-      }
+    const upper = bone(root, "LeftArm");
+    const forearm = bone(root, "LeftForeArm");
+    const shoulder = upper.getWorldPosition(new T.Vector3());
+    const elbowStart = forearm.getWorldPosition(new T.Vector3());
+    const wristStart = hand.getWorldPosition(new T.Vector3());
+    const upperLength = shoulder.distanceTo(elbowStart);
+    const lowerLength = elbowStart.distanceTo(wristStart);
+    // Solve the whole arm with a deliberate elbow pole behind/below the hand.
+    // The contact target is the palm, not the wrist: leave room for the glove.
+    let fingers = new T.Vector3(0.65, -0.15, 1).normalize();
+    let elbow = elbowStart.clone();
+    let wrist = wristStart.clone();
+    for (let iteration = 0; iteration < 8; iteration++) {
+      wrist.copy(target).addScaledVector(fingers, -0.14);
+      wrist.lerpVectors(wristStart, wrist.clone(), petAmount(t));
+      const axis = wrist.clone().sub(shoulder);
+      const distance = T.MathUtils.clamp(
+        axis.length(),
+        0.02,
+        upperLength + lowerLength - 0.001,
+      );
+      axis.normalize();
+      const along =
+        (upperLength * upperLength -
+          lowerLength * lowerLength +
+          distance * distance) /
+        (2 * distance);
+      const height = Math.sqrt(
+        Math.max(0, upperLength * upperLength - along * along),
+      );
+      const pole = new T.Vector3(0, -0.25, -1);
+      pole.addScaledVector(axis, -pole.dot(axis)).normalize();
+      const restPole = elbowStart.clone().sub(shoulder);
+      restPole.addScaledVector(axis, -restPole.dot(axis)).normalize();
+      pole.lerpVectors(restPole, pole.clone(), petAmount(t)).normalize();
+      elbow
+        .copy(shoulder)
+        .addScaledVector(axis, along)
+        .addScaledVector(pole, height);
+      fingers.copy(wrist).sub(elbow).normalize();
     }
-    // Fingers follow the neck; palm (-Z in the supplied glove) faces the animal.
-    poseSantaWrist(
-      hand,
-      new T.Vector3(0, -0.25, 1),
-      new T.Vector3(-1, 0.15, 0),
-      petAmount(t),
-    );
+    direction(upper, elbow.clone().sub(shoulder));
+    direction(forearm, wrist.clone().sub(elbow));
+    const back = new T.Vector3(-1, 0.15, 0);
+    // Carry palm roll through the forearm, keeping the cuff and wrist in line.
+    poseSantaWrist(forearm, fingers, back, petAmount(t));
+    poseSantaWrist(hand, fingers, back, petAmount(t));
     bone(root, "Head").rotateY(0.25 * petAmount(t));
   }
   return (

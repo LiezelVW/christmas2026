@@ -1,10 +1,10 @@
 {
   "project": "DBFL Operation Christmas 2026",
-  "version": "Corrected Santa wrists across all animated scenes; glove-linked reins and seated grip pose; 199 portraits; subtitles off",
-  "file_count_excluding_this_inventory": 354,
+  "version": "Natural elbow-to-wrist petting alignment; glove-linked seated reins retained; 199 portraits; subtitles off",
+  "file_count_excluding_this_inventory": 355,
   "asset_files": 288,
   "prepared_staff_portraits": 199,
-  "total_bytes": 69451593,
+  "total_bytes": 69453538,
   "largest_file": {
     "path": "public/assets/characters/santa-claus-rigged.glb",
     "bytes": 13527540,
@@ -114,6 +114,11 @@
       "path": "docs/review/mosaic-199-rendered.png",
       "bytes": 1706618,
       "sha256": "b640aa4972f44e6c1150264dd7f48599074b8d679d45dc2d02b2985cdd46f5dc"
+    },
+    {
+      "path": "docs/review/natural-petting-arm-2026-11-24.md",
+      "bytes": 927,
+      "sha256": "7601d0cbdfa0bc1791759a3eb6b44b6ed5dc4f9d8ecdb1bac28a708b6e362e9f"
     },
     {
       "path": "docs/review/santa-wrists-and-reins-2026-11-24.md",
@@ -1657,8 +1662,8 @@
     },
     {
       "path": "src/AnimatedChristmasTeam.tsx",
-      "bytes": 19811,
-      "sha256": "882c95290bf842ff538c7d58a8ccf90173fd9fa1e0ede8b1147a4c0fcbba958a"
+      "bytes": 20829,
+      "sha256": "bd174e9b2123be44214a04418ad00d735b603f2b699823c58d94eb2489f334af"
     },
     {
       "path": "src/ApprovedRunwayTakeoff.tsx",
