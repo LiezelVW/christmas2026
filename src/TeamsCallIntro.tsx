@@ -216,7 +216,7 @@ export const TeamsCallIntro = () => {
             inset: "158px 22px 22px",
             display: "flex",
             gap: 18,
-            opacity: joined ? p(f, 75, 84) : 0.25,
+            opacity: 1,
           }}
         >
           <div
@@ -285,26 +285,14 @@ export const TeamsCallIntro = () => {
             <Name>Santa · North Pole Operations</Name>
           </div>
         </div>
-        {!joined ? (
-          <div
-            style={{
-              position: "absolute",
-              inset: 138,
-              background: "#17172180",
-              backdropFilter: "blur(8px)",
-            }}
-          />
-        ) : null}
         {f < 77 ? (
           <div
             style={{
               position: "absolute",
-              width: 650,
-              height: 426,
-              left: "50%",
-              top: "50%",
-              marginLeft: -325,
-              marginTop: -160,
+              width: 340,
+              height: 520,
+              right: 32,
+              top: 200,
               borderRadius: 14,
               border: "1px solid #76717E",
               background: "linear-gradient(145deg,#514F64,#302E41)",
@@ -377,7 +365,7 @@ export const TeamsCallIntro = () => {
                 viewBox="0 0 44 50"
                 style={{
                   position: "absolute",
-                  left: 100 + (1 - p(f, 43, 63)) * 150,
+                  left: 55 + (1 - p(f, 43, 63)) * 120,
                   top: 355 + (1 - p(f, 43, 63)) * 75,
                   filter: "drop-shadow(0 2px 3px #000)",
                 }}

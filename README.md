@@ -1,6 +1,6 @@
 # DBFL Operation Christmas 2026
 
-The latest approved Remotion film: **90 seconds, 1920 × 1080, 25 fps**. Includes all six scenes, the official DBFL logo, Montserrat typography, 198 approved unique portraits and the approved animated North Pole runway takeoff.
+The latest approved Remotion film: **90 seconds, 1920 × 1080, 25 fps**. Includes all six scenes, the official DBFL logo, Montserrat typography, 199 approved unique portraits and the approved animated North Pole runway takeoff.
 
 ## Install and run
 
@@ -21,7 +21,7 @@ npm run verify:project
 npm run render
 ```
 
-`verify:project` checks the bundled GLBs and the 198 approved portrait paths and image hashes, guards the approved takeoff slot, and renders checkpoints from all six scenes (including the takeoff in `Christmas2026`).
+`verify:project` checks the bundled GLBs and the approved portrait paths and image hashes, guards the approved takeoff slot, and renders checkpoints from all six scenes (including the takeoff in `Christmas2026`).
 
 The full render is written under `out/`, which is ignored by git. The Remotion configuration enables ANGLE / WebGL 2 for the rigged 3D scenes. The CLI may download its standard Chromium headless browser on first render. All artwork, models, textures, fonts and decoder files are already included.
 
@@ -46,7 +46,7 @@ There are no dialogue subtitles or narration paragraphs. Essential engineering w
 - `public/assets/characters/`: one shared copy of the Santa, reindeer and sleigh GLBs, with embedded textures and licence notices.
 - `public/basis/`: local KTX2 texture transcoder JavaScript and WebAssembly.
 - `public/assets/scene-2/` through `scene-6/`: approved cinematic plates and engineering artwork.
-- `public/assets/staff-mosaic/`: the prepared photo archive; exactly 198 approved portraits are selected by `src/staff-photos.json`. Unselected originals remain in the project.
+- `public/assets/staff-mosaic/`: the prepared photo archive; 199 approved portraits are selected by `src/staff-photos.json`. Unselected originals remain in the project.
 - `public/assets/branding/`, `caller/`, `fonts/`: official branding, caller image and Montserrat with its font licence.
 - `src/dublin-roads.json` and `public/assets/scene-4/dublin-network.svg`: road geometry used by the transport scene.
 - `docs/UPLOAD-INVENTORY.json`: file-size and SHA-256 inventory of the supplied production files.
@@ -63,10 +63,12 @@ All included assets are below GitHub’s 100 MB individual-file limit, so this r
 
 `Christmas2026` and `Christmas2026Teams` both use the Teams group opening. All twelve directors are visible from the first connected-call frame; there is no John-only shot. `TeamsCallIntro` is the ten-second preview. `Christmas2026OriginalOpening` retains the earlier phone-opening option, and the untouched first draft remains at tag `draft-1-approved-2026-11-19`.
 
-The current source combines the latest approved animation branch (`d992409`) with the approved 198-portrait roster from `8731e7a`. No model, cinematic plate, official logo, takeoff motion or scene timing was replaced. See [update notes](docs/UPDATE-2026-11-23.md) and [roster audit](docs/ROSTER-AUDIT.json).
+The current source combines the latest approved animation branch (`d992409`) with the approved 198-portrait roster from `8731e7a` plus Yasheel’s user-supplied portrait on 24 November. No model, cinematic plate, official logo, takeoff motion or scene timing was replaced. See [update notes](docs/UPDATE-2026-11-23.md) and [roster audit](docs/ROSTER-AUDIT.json).
 
 `npm run render` produces a silent H.264 MP4; it deliberately omits the audio track. Shane’s final voiceover and music will be added in After Effects. No ElevenLabs recording is used. The planned green-screen and office footage can be integrated when supplied.
 
 ## Engineering label correction
 
 Engineering callout panels use single vector images with outlined Montserrat lettering to avoid SVG text/background separation during camera movement. Regenerate these included assets with `npm run build:labels` after `npm ci`. Scene 5 shows the parked sleigh and all four rigged reindeer beside Santa, with workshop wind/solar annotations. See [label and sustainability validation](docs/LABELS-AND-SUSTAINABILITY.md).
+
+The latest review has all directors visible even during the incoming-call notification. See [24 November update](docs/UPDATE-2026-11-24.md). The approved additions list is maintained separately from the original 198-photo selection.

@@ -1,10 +1,10 @@
 {
   "project": "DBFL Operation Christmas 2026",
-  "version": "Latest approved film with dialogue subtitles disabled by a reversible switch; subtitle file and text preserved",
-  "file_count_excluding_this_inventory": 346,
-  "asset_files": 287,
-  "prepared_staff_portraits": 198,
-  "total_bytes": 66901731,
+  "version": "All twelve directors visible throughout the call; approved 198-person roster plus supplied Yasheel portrait; subtitles off",
+  "file_count_excluding_this_inventory": 351,
+  "asset_files": 288,
+  "prepared_staff_portraits": 199,
+  "total_bytes": 69440461,
   "largest_file": {
     "path": "public/assets/characters/santa-claus-rigged.glb",
     "bytes": 13527540,
@@ -37,8 +37,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5962,
-      "sha256": "d9d7793be08eca036797a00e963e44adbd07a69edd5d6c635155e80c6b9e0616"
+      "bytes": 6239,
+      "sha256": "b1091c89c2edfa66345261b3b382a131824c6d3b354f0e30a89139d0c9b8cc99"
     },
     {
       "path": "docs/LABELS-AND-SUSTAINABILITY.md",
@@ -47,13 +47,13 @@
     },
     {
       "path": "docs/ROSTER-AUDIT.json",
-      "bytes": 8059,
-      "sha256": "88785a386b5c51a787219156fb6ceae6da94947bf2e283397d0579d2c94efce2"
+      "bytes": 8337,
+      "sha256": "b850b5cde7e63c88d71409dda1fc921539a04d13270913489c72d9d554a95735"
     },
     {
       "path": "docs/TEAMS-VERSION.md",
-      "bytes": 1508,
-      "sha256": "acca19716902f7c4f1fb74fd4b102bedf01d11ab1b8e3ef65fbd58aa0f5d6ca3"
+      "bytes": 1617,
+      "sha256": "c3c382108d5f4f9a80961fe243684e0b1184970d75cb566955827f4418f0097b"
     },
     {
       "path": "docs/TEXT-RENDERING.md",
@@ -66,9 +66,14 @@
       "sha256": "e1ae9eaaf8aaed6aa7755c83509a09b6919862c663c5f263ec0cab02d7a88ba2"
     },
     {
+      "path": "docs/UPDATE-2026-11-24.md",
+      "bytes": 2396,
+      "sha256": "3b283ff7fed1ef15d283223e10b02c44a8bb10a4090463f1f002b60d279bc10a"
+    },
+    {
       "path": "docs/VALIDATION.md",
-      "bytes": 2173,
-      "sha256": "07e95bab386ce627d4a23246f10c6b46793f23f68459c0af7d285672422df16f"
+      "bytes": 2568,
+      "sha256": "bdfbace2faca59e191b8a2972d971d46e5ea040f0d92ebfe7a0b94cc08cfbf0f"
     },
     {
       "path": "docs/VOICEOVER.md",
@@ -81,6 +86,16 @@
       "sha256": "9fa3682738f3452c722e55000754462d95fd9d07c3e90f67ca795131b3568d04"
     },
     {
+      "path": "docs/approved-roster-additions.json",
+      "bytes": 143,
+      "sha256": "e39f8a0536002ae8f1df19dd695d878a94a76bb627951a760922c5e496caa259"
+    },
+    {
+      "path": "docs/review/directors-incoming-gallery.png",
+      "bytes": 776477,
+      "sha256": "80a1780440d898eccdc2b78bddf292bd132c35aa23e3a89425a15bd633149ee9"
+    },
+    {
       "path": "docs/review/encoded-label-stability.json",
       "bytes": 708,
       "sha256": "55cb1844de439e83c144500efa095ed770f495f395c240fd9dc33751406c1f09"
@@ -89,6 +104,11 @@
       "path": "docs/review/mosaic-198-rendered.png",
       "bytes": 2000374,
       "sha256": "0540bc8590f14bd95c829ec965c083cf61a77e9d931f42f07460d46504a0b51e"
+    },
+    {
+      "path": "docs/review/mosaic-199-rendered.png",
+      "bytes": 1706618,
+      "sha256": "b640aa4972f44e6c1150264dd7f48599074b8d679d45dc2d02b2985cdd46f5dc"
     },
     {
       "path": "docs/review/sustainability-full-team.png",
@@ -1531,6 +1551,11 @@
       "sha256": "539a8eeb0d7a3ff8f6c03d1faf1b93d133601a0aa3d79da42166ef206568c6e6"
     },
     {
+      "path": "public/assets/staff-mosaic/yasheel-abeeluck.jpg",
+      "bytes": 51934,
+      "sha256": "ef26dc15568f0b28bf3ae91fa7546144ae2e2647d336279a682ed8f54956f2a2"
+    },
+    {
       "path": "public/basis/basis_transcoder.js",
       "bytes": 57529,
       "sha256": "8478b5b6d6b74e7d3082b89f6417321d8d1dc0307f2b30d4484bb11b441696a1"
@@ -1612,8 +1637,8 @@
     },
     {
       "path": "scripts/verify-upload-build.mjs",
-      "bytes": 3669,
-      "sha256": "cb6cd8c91565ed07866adea50f0df0027e7aee497a1dad0b350f88d0a1451500"
+      "bytes": 3958,
+      "sha256": "7d1848bf344328f74d001cd2e899fde77aced47f9b25219b50176da19b9d7960"
     },
     {
       "path": "scripts/verify.mjs",
@@ -1702,8 +1727,8 @@
     },
     {
       "path": "src/TeamsCallIntro.tsx",
-      "bytes": 12294,
-      "sha256": "5b884652734ae2e521c8ea7332e03db15454e56d0b5beb73ae2379a0ba0649bf"
+      "bytes": 11952,
+      "sha256": "e39a5a222d1a7cbbbc6debf27578ba4a9b6117a1bf96ce360a5c2331181ce7c5"
     },
     {
       "path": "src/components.tsx",
@@ -1737,8 +1762,8 @@
     },
     {
       "path": "src/staff-photos.json",
-      "bytes": 25923,
-      "sha256": "9fa3682738f3452c722e55000754462d95fd9d07c3e90f67ca795131b3568d04"
+      "bytes": 26079,
+      "sha256": "bb7700fe1c5b66ad30803102261f35dfb0dc356855a32de5776a9973fdfa1878"
     },
     {
       "path": "src/style.css",

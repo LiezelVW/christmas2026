@@ -17,3 +17,7 @@ The MP4 is saved on Desktop as `DBFL Operation Christmas 2026 - Approved 198 Por
 ## Follow-up label and parked-team correction
 
 The follow-up export and encoded-frame checks are documented in [labels and sustainability](LABELS-AND-SUSTAINABILITY.md). Final video remains 90 seconds, 2250 frames, 1920 × 1080, 25 fps and silent. The new Desktop file is `DBFL Operation Christmas 2026 - Fixed Labels and Full Sleigh Team.mp4`; the earlier export remains preserved.
+
+## 24 November directors and Yasheel update
+
+The latest full render completed with all twelve directors visible throughout the incoming-call and connected-call states. The 199-person roster equals the original 198 approved portraits plus the supplied Yasheel portrait; all names, paths and image hashes are unique. Subtitles remain disabled. See [24 November validation](UPDATE-2026-11-24.md).

@@ -91,7 +91,7 @@
   },
   {
     "src": "assets/staff-mosaic/staff-022.jpg",
-    "name": "Árón Ó Conaill",
+    "name": "\u00c1r\u00f3n \u00d3 Conaill",
     "office": "",
     "position": "50% 30%"
   },
@@ -769,7 +769,7 @@
   },
   {
     "src": "assets/staff-mosaic/staff-171.jpg",
-    "name": "Mattias Juhász",
+    "name": "Mattias Juh\u00e1sz",
     "office": "",
     "position": "50% 30%"
   },
@@ -1186,5 +1186,11 @@
     "name": "Richard Tichauer",
     "office": "",
     "position": "50% 30%"
+  },
+  {
+    "src": "assets/staff-mosaic/yasheel-abeeluck.jpg",
+    "name": "Yasheel Abeeluck",
+    "office": "",
+    "position": "50% 35%"
   }
 ]

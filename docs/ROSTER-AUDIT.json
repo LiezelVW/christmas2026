@@ -1,9 +1,9 @@
 {
   "approvedCommit": "8731e7a11c35f0f5603edc4686f8e7f4858ece64",
-  "portraits": 198,
-  "uniqueNames": 198,
-  "uniquePaths": 198,
-  "uniqueFileSHA256": 198,
+  "portraits": 199,
+  "uniqueNames": 199,
+  "uniquePaths": 199,
+  "uniqueFileSHA256": 199,
   "nearDuplicateCandidates": [
     {
       "names": [
@@ -326,10 +326,18 @@
     "Cillin McDermott",
     "Sangeeth Umayanga",
     "Victor Lobo",
-    "Yasheel Abeeluck",
     "Christo Crous \u2014 awaiting his supplied black-and-white file in project",
     "Confirmation of the 196th employee"
   ],
   "doNotInclude": "Dora Belosevic \u2014 no approved photograph",
-  "nearDuplicateReview": "Both low-distance pairs were visually compared; these are different photographs, not duplicates. No approved entry was removed."
+  "nearDuplicateReview": "Both low-distance pairs were visually compared; these are different photographs, not duplicates. No approved entry was removed.",
+  "approvedAdditions": [
+    {
+      "date": "2026-11-24",
+      "name": "Yasheel Abeeluck",
+      "originalFilename": "Jaykishan Abeeluck 1 1.jpg",
+      "src": "assets/staff-mosaic/yasheel-abeeluck.jpg",
+      "approvedBy": "User explicitly supplied this image as Yasheel\u2019s portrait"
+    }
+  ]
 }
